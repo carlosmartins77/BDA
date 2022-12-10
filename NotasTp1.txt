@@ -1,0 +1,10 @@
+- Podemos meter uma tabela de países e passar o country_id na tabela de users
+- Uma tabela para estatisticas de jogadores? É díficil dewgolos dos jogos. A possibilidade é dropar as colunas que dizem os golos de cada equipa e construí-las a partir das estaticias dos jogadores para cada jogo - Ou seja uma tabela EstatsticasJogo. A questão aqui é construí-la apenas com os jogadores de cada equipa. Como é que garantimos isso?
+Uma query com isso, exportamos para csv e carregamos à mão?
+- Homem do jogo
+- No mongo se calhar é melhor dropar as tabelas de relaçao (depende do processo de negocio)
+
+Select * FROM ElementosEquipa el, JogoFutebol jf
+WHERE el.IdEquipaFK = jf.IdEquipa1FK OR el.IdEquipaFK = jf.IdEquipa2FK
+
+7600 segundos. 2 410 426 registos
