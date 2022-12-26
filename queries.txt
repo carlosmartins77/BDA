@@ -1,0 +1,120 @@
+
+--Jogos terminados em que certo id de utilizador  participou e mostrar o nome do mesmo
+
+
+-- Jogos terminados de certos utilizadores..
+SELECT jogos.IdJogoFutebol, eq1.NomeEquipa Equipa1, jogos.GolosEquipa1, jogos.GolosEquipa2, eq2.NomeEquipa Equipa2, 
+CASE WHEN eqv.NomeEquipa IS NULL THEN 'Empate' 
+ELSE eqv.NomeEquipa END EquipaVencedora, 
+jogos.HorarioJogo, jogos.Localizacao FROM (
+SELECT * FROM JogoFutebol jf
+WHERE jf.IdEquipa1FK IN ( SELECT eq.IdEquipa IdEquipa FROM Equipa eq, ElementosEquipa el
+WHERE eq.IdEquipa = el.IdEquipaFK AND el.IdUtilizadorFK = '117410') AND jf.Status = 'Finished' 
+OR jf.IdEquipa2FK IN ( SELECT eq.IdEquipa IdEquipa FROM Equipa eq, ElementosEquipa el
+WHERE eq.IdEquipa = el.IdEquipaFK AND el.IdUtilizadorFK = '117410') AND jf.Status = 'Finished') jogos
+LEFT JOIN Equipa eq1 ON eq1.IdEquipa = jogos.IdEquipa1FK 
+LEFT JOIN Equipa eq2 ON eq2.IdEquipa = jogos.IdEquipa2FK 
+LEFT JOIN Equipa eqv ON eqv.IdEquipa = jogos.IDEquipaVencedora
+
+
+SELECT * FROM JogoFutebol 
+WHERE STATUS = 'Finished' AND IDEquipaVencedora IS NULL
+
+SELECT * FROM ElementosEquipa el INNER JOIN Equipa eq1 ON eq1.IdEquipa = el.IdEquipaFK
+WHERE el.IdEquipaFK = '18351'
+-- Numero de golos por dia
+SELECT HorarioJogo, geq1+geq2 AS TotalGolos FROM (
+SELECT HorarioJogo, SUM(GolosEquipa1) geq1, SUM(GolosEquipa2) geq2 FROM JogoFutebol 
+GROUP BY HorarioJogo) jf
+ORDER BY HorarioJogo ASC
+
+-- Obter jogos, nome do capitao de cada equipa, nome das Equipa
+
+SELECT jf.IdJogoFutebol, eq1.NomeEquipa Equipa1, jf.GolosEquipa1, eq2.NomeEquipa Equipa2, jf.GolosEquipa2, ut1.Nome CapitaoEquipa1, ut2.Nome CapitaoEquipa2, CASE WHEN eqv.NomeEquipa IS NULL THEN 'Empate' 
+ELSE eqv.NomeEquipa END EquipaVencedora, jf.HorarioJogo, jf.Localizacao
+FROM JogoFutebol jf
+RIGHT JOIN Equipa eq1 ON eq1.IdEquipa = jf.IdEquipa1FK 
+RIGHT JOIN Equipa eq2 ON eq2.IdEquipa = jf.IdEquipa2FK
+LEFT JOIN Utilizador ut1 ON ut1.IdUtilizador = eq1.IdUtilizadorCapitaoFK
+LEFT JOIN Utilizador ut2 ON ut2.IdUtilizador = eq2.IdUtilizadorCapitaoFK
+LEFT JOIN Equipa eqv ON eqv.IdEquipa = jf.IDEquipaVencedora
+WHERE jf.Status = 'Finished'
+
+-- Contar quantos amigos tem cada Utilizador e mostrar o nome em vez do id
+SELECT * FROM Amizades
+
+
+-- Golos totais por equipa
+SELECT eq.NomeEquipa, GolosEquipa1 + GolosEquipa2 AS GolosTotais FROM 
+(SELECT * FROM Equipa) eq,
+(SELECT IdEquipa1FK, SUM(GolosEquipa1) GolosEquipa1 FROM JogoFutebol 
+WHERE Status = 'Finished' --AND IdEquipa1FK = '1'
+GROUP BY IdEquipa1FK) jf1,
+(SELECT IdEquipa2FK, SUM(GolosEquipa2) GolosEquipa2 FROM JogoFutebol
+WHERE  Status = 'Finished' --AND IdEquipa2FK = '1'
+GROUP BY IdEquipa2FK) jf2
+WHERE jf1.IdEquipa1FK = jf2.IdEquipa2FK
+AND eq.IdEquipa = jf1.IdEquipa1FK
+
+
+
+SELECT MAX(jf1.NomeEquipa), IdEquipa1FK, SUM(jf1.GolosEquipa1) + SUM(jf2.GolosEquipa2) AS GolosTotais FROM 
+
+SELECT * FROM 
+(SELECT * FROM JogoFutebol jf, Equipa eq
+WHERE Status = 'Finished' AND IdEquipa1FK IN('1')
+AND eq.IdEquipa = jf.IdEquipa1FK) jf1, 
+(SELECT * FROM JogoFutebol jf, Equipa eq
+WHERE Status = 'Finished' AND IdEquipa2FK IN( '1')
+AND eq.IdEquipa = jf.IdEquipa2FK) jf2
+WHERE jf2.IdEquipa2FK = jf1.IdEquipa1FK
+
+
+SELECT COUNT(IdEquipa) FROM Equipa
+999967
+
+GROUP BY IdEquipa1FK
+
+SELECT * FROM JogoFutebol
+WHERE Status = 'Finished' AND (IdEquipa1FK = '1' OR IdEquipa2FK = '1')
+
+
+SELECT 
+	CASE WHEN IdEquipa1FK IS NULL THEN IdEquipa2FK
+	WHEN IdEquipa2FK IS NULL THEN IdEquipa1FK
+	ELSE 0 END IdEquipa
+FROM JogoFutebol
+WHERE Status = 'Finished'
+
+-- Atualizar a coluna IdEquipaVencedora
+UPDATE JogoFutebol
+SET IDEquipaVencedora = CASE 
+														WHEN GolosEquipa1 > GolosEquipa2 THEN IdEquipa1FK
+														WHEN GolosEquipa2 > GolosEquipa1 THEN IdEquipa2FK 
+														ELSE NULL
+												END			
+												
+UPDATE JogoFutebol
+SET GolosEquipa1 = NULL, GolosEquipa2 = NULL, IDEquipaVencedora = NULL
+WHERE Status IN ('Accepted', 'Refused', 'Pending')
+
+
+SELECT * FROM JogoFutebol
+WHERE Status = 'Finished' AND (IdEquipa1FK = '2312' OR IdEquipa2FK = '2312')
+
+SELECT COUNT(*) FROM Utilizador;
+
+
+SELECT AVG(a.NAmizades) FROM (
+SELECT IdUtilizador1FK, COUNT(IdUtilizador2FK) NAmizades FROM Amizades
+GROUP BY IdUtilizador1FK) a
+
+
+SELECT COUNT(*) From Amizades;
+
+SELECT COUNT(*) FROM JogoFutebol Where status = 'Accepted';
+
+SELECT COUNT(*) From Publicacoes;
+
+SELECT COUNT(*) From Equipa;
+

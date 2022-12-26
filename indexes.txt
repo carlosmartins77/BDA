@@ -1,0 +1,63 @@
+
+SELECT jogos.IdJogoFutebol, eq1.NomeEquipa Equipa1, jogos.GolosEquipa1, jogos.GolosEquipa2, eq2.NomeEquipa Equipa2, 
+CASE WHEN eqv.NomeEquipa IS NULL THEN 'Empate' 
+ELSE eqv.NomeEquipa END EquipaVencedora, 
+jogos.HorarioJogo, jogos.Localizacao FROM (
+SELECT * FROM JogoFutebol jf
+WHERE jf.IdEquipa1FK IN ( SELECT eq.IdEquipa IdEquipa FROM Equipa eq, ElementosEquipa el
+WHERE eq.IdEquipa = el.IdEquipaFK AND el.IdUtilizadorFK = '117410') AND jf.Status = 'Finished' 
+OR jf.IdEquipa2FK IN ( SELECT eq.IdEquipa IdEquipa FROM Equipa eq, ElementosEquipa el
+WHERE eq.IdEquipa = el.IdEquipaFK AND el.IdUtilizadorFK = '117410') AND jf.Status = 'Finished') jogos
+LEFT JOIN Equipa eq1 ON eq1.IdEquipa = jogos.IdEquipa1FK 
+LEFT JOIN Equipa eq2 ON eq2.IdEquipa = jogos.IdEquipa2FK 
+LEFT JOIN Equipa eqv ON eqv.IdEquipa = jogos.IDEquipaVencedora
+
+-- Sem indice: Melhor caso: 0.571s | Pior caso: 0.460s
+-- Com indice - Melhor caso: 0.296s | Pior caso: 0.417
+CREATE INDEX JogoFutebolStatusIndex1 ON JogoFutebol(Status) INCLUDE (IdEquipa1FK, IdEquipa2FK, IdEquipaVencedora, GolosEquipa1, GolosEquipa2, HorarioJogo, Localizacao)
+DROP INDEX JogoFutebol.JogoFutebolStatusIndex1;
+
+------------------
+
+SELECT eq.NomeEquipa, GolosEquipa1 + GolosEquipa2 AS GolosTotais FROM 
+(SELECT * FROM Equipa) eq,
+(SELECT IdEquipa1FK, SUM(GolosEquipa1) GolosEquipa1 FROM JogoFutebol 
+WHERE Status = 'Finished' --AND IdEquipa1FK = '1'
+GROUP BY IdEquipa1FK) jf1,
+(SELECT IdEquipa2FK, SUM(GolosEquipa2) GolosEquipa2 FROM JogoFutebol
+WHERE  Status = 'Finished' --AND IdEquipa2FK = '1'
+GROUP BY IdEquipa2FK) jf2
+WHERE jf1.IdEquipa1FK = jf2.IdEquipa2FK
+AND eq.IdEquipa = jf1.IdEquipa1FK
+
+-- Sem indice: Melhor caso: 0.855s | Pior caso: 1.451s
+-- Com indice - Melhor caso: 0.515s | Pior caso: 0.605
+CREATE INDEX JogoFutebolStatusIndex2 ON JogoFutebol(Status) INCLUDE (IdEquipa1FK, IdEquipa2FK, GolosEquipa1, GolosEquipa2)
+DROP INDEX JogoFutebol.JogoFutebolStatusIndex2;
+-- Ao criar este indice, a tabela ficou com 2 indices mas não tornou a execução mais lenta. Foram feitos testes com 1 indice e 2 indices.
+
+
+
+SELECT jf.IdJogoFutebol, eq1.NomeEquipa Equipa1, jf.GolosEquipa1, eq2.NomeEquipa Equipa2, jf.GolosEquipa2, ut1.Nome CapitaoEquipa1, ut2.Nome CapitaoEquipa2, CASE WHEN eqv.NomeEquipa IS NULL THEN 'Empate' 
+ELSE eqv.NomeEquipa END EquipaVencedora, jf.HorarioJogo, jf.Localizacao
+FROM JogoFutebol jf
+RIGHT JOIN Equipa eq1 ON eq1.IdEquipa = jf.IdEquipa1FK 
+RIGHT JOIN Equipa eq2 ON eq2.IdEquipa = jf.IdEquipa2FK
+LEFT JOIN Utilizador ut1 ON ut1.IdUtilizador = eq1.IdUtilizadorCapitaoFK
+LEFT JOIN Utilizador ut2 ON ut2.IdUtilizador = eq2.IdUtilizadorCapitaoFK
+LEFT JOIN Equipa eqv ON eqv.IdEquipa = jf.IDEquipaVencedora
+WHERE jf.Status = 'Finished'
+
+-- Sem indice: Melhor caso: 7.490s | Pior caso: 9.489s | Media:
+-- Com indice - Melhor caso: 6.659 | Pior caso: 8.154 | Media: 7.607
+CREATE INDEX JogoFutebolStatusIndex3 ON JogoFutebol(IdEquipa1FK, Status) INCLUDE (IdEquipa2FK, IDEquipaVencedora, GolosEquipa1, GolosEquipa2, HorarioJogo, Localizacao)
+DROP INDEX JogoFutebol.JogoFutebolStatusIndex3;
+
+7.607
+8.154
+7.112
+6.659
+
+6.748
+8.423
+8.019
