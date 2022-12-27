@@ -1,0 +1,669 @@
+{
+    "modelName": "Logs",
+    "collections": [
+        {
+            "collectionName": "Logs",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "IdLog",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "1cf44d15-5f61-4c93-9eed-30eb2928885f",
+                    "primaryKey": true,
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "IdUtilizador",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "required": true,
+                    "GUID": "46fed0e7-ff26-4900-9b6b-73cf2129be8c",
+                    "error": {}
+                },
+                {
+                    "name": "Descricao",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "85677e9f-c483-4c00-b4da-af54cc4ff5b7",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "DataHorario",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "41929a98-6296-4b55-9618-4f187de4b979",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "0c1dfe9e-80eb-4ca0-a690-3e4d09d8ea79"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "72c9dba1-11e1-4982-8c1e-47629b47ab60",
+            "bucketId": "864f51d5-733f-41fd-aedb-c6bdc8c15f32"
+        },
+        {
+            "collectionName": "Publicacoes",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "IdPublicacao",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "GUID": "09fc6dd3-5274-4ee0-b6ac-383e55630a59",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "IdUtilizador",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "required": true,
+                    "GUID": "58d9a1a5-da61-4f5b-afa0-ea351362eb3d",
+                    "error": {}
+                },
+                {
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "f72a32be-54e3-485a-9b4b-ad38b828d6d9",
+                    "name": "Conteudo",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "DataHorario",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "fc5e4bf0-149a-4f23-9a96-9cd6e0a1fa77",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "Status",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "56c1c08c-92cb-4d8a-8b0a-fd191c844b1c",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "edc59821-8349-4955-a5b4-a52d78bd2821"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "4bba356d-073b-4ca6-9382-5ed5979fa3a8",
+            "bucketId": "864f51d5-733f-41fd-aedb-c6bdc8c15f32"
+        },
+        {
+            "collectionName": "Equipa",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "IdEquipa",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": true,
+                    "required": true,
+                    "GUID": "2df6d11a-b9d4-4949-8b0b-0dcf7c786633",
+                    "error": {}
+                },
+                {
+                    "name": "NomeEquipa",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "2dbab785-cc48-4a93-a0e0-4b7644700fe9",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "DataCriacao",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "0f1b0335-7b02-4032-a5d7-a2d0d0c09ba6",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "IdUtilizadorCapitao",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "required": true,
+                    "GUID": "c5c37d67-9cc1-47af-b8d4-5ea329de7cbf",
+                    "error": {}
+                },
+                {
+                    "name": "ElementosEquipa",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "objectId",
+                            "GUID": "e77db573-128f-4618-bdcf-3e131d9c2c81",
+                            "arrayItem": true,
+                            "arrayParentType": "array",
+                            "displayName": "Elemento1",
+                            "error": {}
+                        },
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "objectId",
+                            "GUID": "c59a3dc0-8b10-4351-a42f-14eafbe0d921",
+                            "arrayItem": true,
+                            "arrayParentType": "array",
+                            "displayName": "Elemento2",
+                            "error": {}
+                        }
+                    ],
+                    "additionalItems": true,
+                    "GUID": "2dcad886-4fae-45fc-bf33-5bbd38a39627",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "JogosFutebol",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "name": "New Field",
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "name": "IdJogoFutebol",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "objectId",
+                                    "GUID": "b8fc1777-2549-4f12-9db0-f22ed3e0fb23",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "EquipaAdversaria",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "GUID": "3ce0f91c-fe5a-49ae-992b-a2a684241ddc",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "Vencedor",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "objectId",
+                                    "GUID": "a2970566-5072-4401-ae25-4f0221d4376c",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "GolosEquipa1",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "GUID": "1de10751-1ee0-4b26-bc5c-ee2c88d27365",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "GolosEquipa2",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "GUID": "35399db4-72e4-42b0-8dc7-52e1b6143aff",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "HorarioJogo",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "date",
+                                    "primaryKey": false,
+                                    "GUID": "a06dbe27-bbb9-4931-9485-018873f671bc",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "Localizacao",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "GUID": "72ba9337-e256-4af8-98b2-87d9c5c73768",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "Status",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "GUID": "bc0b967a-60c6-4933-a991-97b5f6decd64",
+                                    "error": {}
+                                }
+                            ],
+                            "isActivated": true,
+                            "GUID": "73968594-697a-44d6-adc8-aa79f9032a4e",
+                            "hackoladeMeta": {},
+                            "arrayItem": true,
+                            "arrayParentType": "array",
+                            "displayName": "Jogo",
+                            "default": "",
+                            "additionalProperties": false,
+                            "error": {}
+                        }
+                    ],
+                    "additionalItems": true,
+                    "GUID": "22c2964c-5055-4488-8879-3f8cee56d385",
+                    "required": false,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "e243c0cf-feab-411c-a3a6-7ac79b881d03"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "8d05b037-e93f-4b1f-be43-0c09034b7601",
+            "bucketId": "864f51d5-733f-41fd-aedb-c6bdc8c15f32"
+        },
+        {
+            "collectionName": "Amizades",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "IdUtilizador1",
+                    "hackoladeMeta": {
+                        "namingConvention": ""
+                    },
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "f3a536db-80c7-4bc3-abae-c2c66da57a9d",
+                    "primaryKey": true,
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "IdUtilizador2",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "3ad57091-d8e2-4c91-badd-7a753d91061a",
+                    "primaryKey": true,
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "41c2401e-bb76-4cea-92ad-e5cfedb56836"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "ddb004be-9103-483d-ab52-2d992b9ac9ba",
+            "bucketId": "864f51d5-733f-41fd-aedb-c6bdc8c15f32"
+        },
+        {
+            "collectionName": "Utilizador",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "IdUtilizador",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "c51242bd-d6bf-4a05-92b5-47a7ac3e67f2",
+                    "required": true,
+                    "primaryKey": true,
+                    "error": {}
+                },
+                {
+                    "name": "Nome",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "b5af799f-af62-497c-a438-6fa2cdb1fd91",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "Email",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "0f6ea5fb-6cf9-435e-a834-377fda63e3a7",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "Password",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "ea09304b-750b-4eb6-8f18-232488f2abf7",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "DataNascimento",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "bf28bbda-22f4-4a2f-84e7-b82859c58e08",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "DataCriacao",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "7910cbd5-6f9f-45d8-be43-300b7554eac9",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "Geolocalizacao",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "2ec5904f-9ebc-4854-a9d3-d200a0d71a97",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "95631ada-c92e-4c9a-b5a7-e67ca49caaf2"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "df52931f-bdab-4fe8-bd31-0c18ef81a9b7",
+            "bucketId": "864f51d5-733f-41fd-aedb-c6bdc8c15f32"
+        }
+    ],
+    "buckets": [
+        {
+            "name": "Kickoff",
+            "type": "bucket",
+            "collectionIds": [
+                "72c9dba1-11e1-4982-8c1e-47629b47ab60",
+                "4bba356d-073b-4ca6-9382-5ed5979fa3a8",
+                "8d05b037-e93f-4b1f-be43-0c09034b7601",
+                "ddb004be-9103-483d-ab52-2d992b9ac9ba",
+                "df52931f-bdab-4fe8-bd31-0c18ef81a9b7"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "864f51d5-733f-41fd-aedb-c6bdc8c15f32"
+        }
+    ],
+    "views": [],
+    "relationships": [],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "864f51d5-733f-41fd-aedb-c6bdc8c15f32": "Kickoff",
+        "72c9dba1-11e1-4982-8c1e-47629b47ab60": "Logs",
+        "1cf44d15-5f61-4c93-9eed-30eb2928885f": "IdLog",
+        "46fed0e7-ff26-4900-9b6b-73cf2129be8c": "IdUtilizador",
+        "41929a98-6296-4b55-9618-4f187de4b979": "DataHorario",
+        "4bba356d-073b-4ca6-9382-5ed5979fa3a8": "Publicacoes",
+        "09fc6dd3-5274-4ee0-b6ac-383e55630a59": "IdPublicacao",
+        "58d9a1a5-da61-4f5b-afa0-ea351362eb3d": "IdUtilizador",
+        "f72a32be-54e3-485a-9b4b-ad38b828d6d9": "Conteudo",
+        "fc5e4bf0-149a-4f23-9a96-9cd6e0a1fa77": "DataHorario",
+        "56c1c08c-92cb-4d8a-8b0a-fd191c844b1c": "Status",
+        "8d05b037-e93f-4b1f-be43-0c09034b7601": "Equipa",
+        "2df6d11a-b9d4-4949-8b0b-0dcf7c786633": "IdEquipa",
+        "2dbab785-cc48-4a93-a0e0-4b7644700fe9": "NomeEquipa",
+        "0f1b0335-7b02-4032-a5d7-a2d0d0c09ba6": "DataCriacao",
+        "c5c37d67-9cc1-47af-b8d4-5ea329de7cbf": "IdUtilizadorCapitao",
+        "2dcad886-4fae-45fc-bf33-5bbd38a39627": "ElementosEquipa",
+        "22c2964c-5055-4488-8879-3f8cee56d385": "JogosFutebol",
+        "ddb004be-9103-483d-ab52-2d992b9ac9ba": "Amizades",
+        "f3a536db-80c7-4bc3-abae-c2c66da57a9d": "IdUtilizador1",
+        "3ad57091-d8e2-4c91-badd-7a753d91061a": "IdUtilizador2",
+        "df52931f-bdab-4fe8-bd31-0c18ef81a9b7": "Utilizador",
+        "c51242bd-d6bf-4a05-92b5-47a7ac3e67f2": "IdUtilizador",
+        "b5af799f-af62-497c-a438-6fa2cdb1fd91": "Nome",
+        "0f6ea5fb-6cf9-435e-a834-377fda63e3a7": "Email",
+        "ea09304b-750b-4eb6-8f18-232488f2abf7": "Password",
+        "bf28bbda-22f4-4a2f-84e7-b82859c58e08": "DataNascimento",
+        "7910cbd5-6f9f-45d8-be43-300b7554eac9": "DataCriacao",
+        "2ec5904f-9ebc-4854-a9d3-d200a0d71a97": "Geolocalizacao",
+        "73968594-697a-44d6-adc8-aa79f9032a4e": "New Field",
+        "a06dbe27-bbb9-4931-9485-018873f671bc": "HorarioJogo",
+        "72ba9337-e256-4af8-98b2-87d9c5c73768": "Localizacao",
+        "bc0b967a-60c6-4933-a991-97b5f6decd64": "Status",
+        "85677e9f-c483-4c00-b4da-af54cc4ff5b7": "Descricao"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "e15f48ad-0852-4b62-a16b-53e7940c7d61"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "8817f523-bff2-4417-ad02-e69da8584f1f"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "660a69a6-98eb-4d33-bfff-0d0313a6c59d"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v5.0",
+    "dbVendor": "MongoDB",
+    "appTarget": "MONGODB",
+    "creationTS": "2022-12-26T21:02:32.838Z",
+    "GUID": "d9b9133e-bc00-44a9-9670-e21c904ceeeb",
+    "isLineageEnabled": false,
+    "lastModifTS": "2022-12-27T12:13:34.124Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.7.0"
+    },
+    "hackoladeMeta": {
+        "validationErrors": {
+            "modelName": false
+        }
+    },
+    "code": "Logs",
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "72c9dba1-11e1-4982-8c1e-47629b47ab60",
+                        "x": 749,
+                        "y": 239,
+                        "width": 222,
+                        "height": 105,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "4bba356d-073b-4ca6-9382-5ed5979fa3a8",
+                        "x": 746,
+                        "y": 84,
+                        "width": 223,
+                        "height": 123,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "8d05b037-e93f-4b1f-be43-0c09034b7601",
+                        "x": 80,
+                        "y": 185,
+                        "width": 260,
+                        "height": 141,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "ddb004be-9103-483d-ab52-2d992b9ac9ba",
+                        "x": 99,
+                        "y": 89,
+                        "width": 226,
+                        "height": 78,
+                        "color": {
+                            "hex": "#2196f3"
+                        }
+                    },
+                    {
+                        "GUID": "df52931f-bdab-4fe8-bd31-0c18ef81a9b7",
+                        "x": 410,
+                        "y": 102,
+                        "width": 269,
+                        "height": 297,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 40,
+                        "y": 44,
+                        "GUID": "864f51d5-733f-41fd-aedb-c6bdc8c15f32"
+                    }
+                ],
+                "collapsedNodes": [
+                    "8d05b037-e93f-4b1f-be43-0c09034b760122c2964c-5055-4488-8879-3f8cee56d385",
+                    "8d05b037-e93f-4b1f-be43-0c09034b76012dcad886-4fae-45fc-bf33-5bbd38a39627"
+                ],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [
+                [
+                    "8d05b037-e93f-4b1f-be43-0c09034b7601",
+                    "22c2964c-5055-4488-8879-3f8cee56d385",
+                    "73968594-697a-44d6-adc8-aa79f9032a4e"
+                ],
+                [
+                    "8d05b037-e93f-4b1f-be43-0c09034b7601",
+                    "22c2964c-5055-4488-8879-3f8cee56d385"
+                ],
+                [
+                    "8d05b037-e93f-4b1f-be43-0c09034b7601",
+                    "2dcad886-4fae-45fc-bf33-5bbd38a39627"
+                ]
+            ],
+            "shouldDistributeCollections": false
+        }
+    }
+}
