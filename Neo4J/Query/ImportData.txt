@@ -1,0 +1,5 @@
+:auto LOAD CSV WITH HEADERS from "file:///Amizades.csv" AS line
+CALL {
+    with line
+    CREATE (amizade:Amizade {IdUtilizador1FK: toInteger(line.IdUtilizador1FK), IdUtilizador2FK: toInteger(line.IdUtilizador2FK)})
+} IN TRANSACTIONS OF 1000 ROWS
