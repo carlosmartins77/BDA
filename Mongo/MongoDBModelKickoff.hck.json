@@ -191,7 +191,7 @@
                             "GUID": "e77db573-128f-4618-bdcf-3e131d9c2c81",
                             "arrayItem": true,
                             "arrayParentType": "array",
-                            "displayName": "Elemento1",
+                            "displayName": "IdUtilizador1",
                             "error": {}
                         },
                         {
@@ -201,7 +201,7 @@
                             "GUID": "c59a3dc0-8b10-4351-a42f-14eafbe0d921",
                             "arrayItem": true,
                             "arrayParentType": "array",
-                            "displayName": "Elemento2",
+                            "displayName": "IdUtilizador2",
                             "error": {}
                         }
                     ],
@@ -229,7 +229,7 @@
                                     "error": {}
                                 },
                                 {
-                                    "name": "EquipaAdversaria",
+                                    "name": "IdEquipa2",
                                     "hackoladeMeta": {},
                                     "isActivated": true,
                                     "type": "string",
@@ -237,7 +237,7 @@
                                     "error": {}
                                 },
                                 {
-                                    "name": "Vencedor",
+                                    "name": "IdEquipaVencedorar",
                                     "hackoladeMeta": {},
                                     "isActivated": true,
                                     "type": "objectId",
@@ -324,53 +324,6 @@
             "bucketId": "864f51d5-733f-41fd-aedb-c6bdc8c15f32"
         },
         {
-            "collectionName": "Amizades",
-            "type": "object",
-            "properties": [
-                {
-                    "name": "IdUtilizador1",
-                    "hackoladeMeta": {
-                        "namingConvention": ""
-                    },
-                    "isActivated": true,
-                    "type": "objectId",
-                    "GUID": "f3a536db-80c7-4bc3-abae-c2c66da57a9d",
-                    "primaryKey": true,
-                    "required": true,
-                    "error": {}
-                },
-                {
-                    "name": "IdUtilizador2",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "type": "objectId",
-                    "GUID": "3ad57091-d8e2-4c91-badd-7a753d91061a",
-                    "primaryKey": true,
-                    "required": true,
-                    "error": {}
-                }
-            ],
-            "definitions": {
-                "type": "definitions",
-                "properties": [],
-                "GUID": "41c2401e-bb76-4cea-92ad-e5cfedb56836"
-            },
-            "isActivated": true,
-            "additionalProperties": false,
-            "validationLevel": "Off",
-            "validationAction": "Warn",
-            "storageEngineName": "WiredTiger",
-            "collectionUsers": [],
-            "indexes": [],
-            "collation": {},
-            "sharding": {
-                "unique": true,
-                "collation": "null"
-            },
-            "GUID": "ddb004be-9103-483d-ab52-2d992b9ac9ba",
-            "bucketId": "864f51d5-733f-41fd-aedb-c6bdc8c15f32"
-        },
-        {
             "collectionName": "Utilizador",
             "type": "object",
             "properties": [
@@ -438,6 +391,34 @@
                     "type": "string",
                     "GUID": "2ec5904f-9ebc-4854-a9d3-d200a0d71a97",
                     "error": {}
+                },
+                {
+                    "name": "Amizades",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "objectId",
+                            "GUID": "eff46df8-46e1-40ee-ab24-6e089989cba1",
+                            "arrayItem": true,
+                            "arrayParentType": "array"
+                        },
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "objectId",
+                            "GUID": "bd317d06-b504-48c8-bbf5-cae092f70031",
+                            "arrayItem": true,
+                            "arrayParentType": "array",
+                            "error": {}
+                        }
+                    ],
+                    "additionalItems": true,
+                    "GUID": "3b6e25a6-9c9e-46d3-9db8-5259bf21823f",
+                    "error": {}
                 }
             ],
             "definitions": {
@@ -469,7 +450,6 @@
                 "72c9dba1-11e1-4982-8c1e-47629b47ab60",
                 "4bba356d-073b-4ca6-9382-5ed5979fa3a8",
                 "8d05b037-e93f-4b1f-be43-0c09034b7601",
-                "ddb004be-9103-483d-ab52-2d992b9ac9ba",
                 "df52931f-bdab-4fe8-bd31-0c18ef81a9b7"
             ],
             "backgroundColor": {
@@ -506,9 +486,6 @@
         "c5c37d67-9cc1-47af-b8d4-5ea329de7cbf": "IdUtilizadorCapitao",
         "2dcad886-4fae-45fc-bf33-5bbd38a39627": "ElementosEquipa",
         "22c2964c-5055-4488-8879-3f8cee56d385": "JogosFutebol",
-        "ddb004be-9103-483d-ab52-2d992b9ac9ba": "Amizades",
-        "f3a536db-80c7-4bc3-abae-c2c66da57a9d": "IdUtilizador1",
-        "3ad57091-d8e2-4c91-badd-7a753d91061a": "IdUtilizador2",
         "df52931f-bdab-4fe8-bd31-0c18ef81a9b7": "Utilizador",
         "c51242bd-d6bf-4a05-92b5-47a7ac3e67f2": "IdUtilizador",
         "b5af799f-af62-497c-a438-6fa2cdb1fd91": "Nome",
@@ -521,7 +498,10 @@
         "a06dbe27-bbb9-4931-9485-018873f671bc": "HorarioJogo",
         "72ba9337-e256-4af8-98b2-87d9c5c73768": "Localizacao",
         "bc0b967a-60c6-4933-a991-97b5f6decd64": "Status",
-        "85677e9f-c483-4c00-b4da-af54cc4ff5b7": "Descricao"
+        "85677e9f-c483-4c00-b4da-af54cc4ff5b7": "Descricao",
+        "a2970566-5072-4401-ae25-4f0221d4376c": "IdEquipaVencedorar",
+        "3ce0f91c-fe5a-49ae-992b-a2a684241ddc": "IdEquipa2",
+        "3b6e25a6-9c9e-46d3-9db8-5259bf21823f": "Amizades"
     },
     "definitions": {
         "type": "definitions",
@@ -546,14 +526,14 @@
     "creationTS": "2022-12-26T21:02:32.838Z",
     "GUID": "d9b9133e-bc00-44a9-9670-e21c904ceeeb",
     "isLineageEnabled": false,
-    "lastModifTS": "2022-12-27T12:13:34.124Z",
+    "lastModifTS": "2022-12-28T15:49:19.722Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "6.7.0"
+        "version": "6.8.0"
     },
     "hackoladeMeta": {
         "validationErrors": {
@@ -567,16 +547,16 @@
                 "erd": [
                     {
                         "GUID": "72c9dba1-11e1-4982-8c1e-47629b47ab60",
-                        "x": 749,
-                        "y": 239,
+                        "x": 747,
+                        "y": 307,
                         "width": 222,
                         "height": 105,
                         "color": {}
                     },
                     {
                         "GUID": "4bba356d-073b-4ca6-9382-5ed5979fa3a8",
-                        "x": 746,
-                        "y": 84,
+                        "x": 745,
+                        "y": 112,
                         "width": 223,
                         "height": 123,
                         "color": {}
@@ -584,27 +564,17 @@
                     {
                         "GUID": "8d05b037-e93f-4b1f-be43-0c09034b7601",
                         "x": 80,
-                        "y": 185,
-                        "width": 260,
-                        "height": 141,
+                        "y": 115,
+                        "width": 306,
+                        "height": 339,
                         "color": {}
                     },
                     {
-                        "GUID": "ddb004be-9103-483d-ab52-2d992b9ac9ba",
-                        "x": 99,
-                        "y": 89,
-                        "width": 226,
-                        "height": 78,
-                        "color": {
-                            "hex": "#2196f3"
-                        }
-                    },
-                    {
                         "GUID": "df52931f-bdab-4fe8-bd31-0c18ef81a9b7",
-                        "x": 410,
-                        "y": 102,
-                        "width": 269,
-                        "height": 297,
+                        "x": 428,
+                        "y": 114,
+                        "width": 246,
+                        "height": 213,
                         "color": {}
                     }
                 ],
@@ -617,14 +587,11 @@
                 "buckets": [
                     {
                         "x": 40,
-                        "y": 44,
+                        "y": 72,
                         "GUID": "864f51d5-733f-41fd-aedb-c6bdc8c15f32"
                     }
                 ],
-                "collapsedNodes": [
-                    "8d05b037-e93f-4b1f-be43-0c09034b760122c2964c-5055-4488-8879-3f8cee56d385",
-                    "8d05b037-e93f-4b1f-be43-0c09034b76012dcad886-4fae-45fc-bf33-5bbd38a39627"
-                ],
+                "collapsedNodes": [],
                 "activeRelationship": "",
                 "activeRelationshipFields": {
                     "childField": [],
@@ -649,15 +616,6 @@
         },
         "dtDiagram": {
             "collapsedNodes": [
-                [
-                    "8d05b037-e93f-4b1f-be43-0c09034b7601",
-                    "22c2964c-5055-4488-8879-3f8cee56d385",
-                    "73968594-697a-44d6-adc8-aa79f9032a4e"
-                ],
-                [
-                    "8d05b037-e93f-4b1f-be43-0c09034b7601",
-                    "22c2964c-5055-4488-8879-3f8cee56d385"
-                ],
                 [
                     "8d05b037-e93f-4b1f-be43-0c09034b7601",
                     "2dcad886-4fae-45fc-bf33-5bbd38a39627"

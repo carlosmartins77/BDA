@@ -1,0 +1,3299 @@
+{
+    "modelName": "bda",
+    "collections": [
+        {
+            "collectionName": "Amizades",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "Utilizador",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "name": "IdUtilizador",
+                            "isActivated": true,
+                            "type": "numeric",
+                            "required": true,
+                            "mode": "integer32",
+                            "primaryKey": false,
+                            "GUID": "58f28a54-48bb-471f-8bea-ca34da935d56",
+                            "childRelationships": [],
+                            "sources": [
+                                {
+                                    "GUID": "87db19ed-00ab-4b42-825f-39277c4c6883",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "IdUtilizador",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "60e721ee-5279-47b5-a2d3-da236092918a",
+                                    "lineageSourceGUID": "5c3a9f60-4fcf-4cdd-b06b-13af78df78f4",
+                                    "lineageSourceAttrBusName": "IdUtilizador",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Nome",
+                            "isActivated": true,
+                            "type": "string",
+                            "required": true,
+                            "maxLength": 255,
+                            "primaryKey": false,
+                            "GUID": "08187846-c193-4417-aea0-12fee0dec7d8",
+                            "sources": [
+                                {
+                                    "GUID": "536efbdb-1a72-450d-ac6c-7fc2c93308d5",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "Nome",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "481a2184-2d80-417f-81c0-c8a2d0712f24",
+                                    "lineageSourceGUID": "5c3a9f60-4fcf-4cdd-b06b-13af78df78f4",
+                                    "lineageSourceAttrBusName": "Nome",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "childRelationships": [],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Email",
+                            "isActivated": true,
+                            "type": "string",
+                            "required": true,
+                            "maxLength": 255,
+                            "primaryKey": false,
+                            "GUID": "a2b09e9c-6cbb-4c7c-9faf-72bac02bebc4",
+                            "sources": [
+                                {
+                                    "GUID": "ee81974e-7712-4cea-9a2d-53353c945daf",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "Email",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "099b694a-0eb8-4522-8f77-5ec4ddb41baa",
+                                    "lineageSourceGUID": "5c3a9f60-4fcf-4cdd-b06b-13af78df78f4",
+                                    "lineageSourceAttrBusName": "Email",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "childRelationships": [],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Password",
+                            "isActivated": true,
+                            "type": "string",
+                            "required": true,
+                            "maxLength": 255,
+                            "primaryKey": false,
+                            "GUID": "64097e53-e5d4-477d-b33b-0bdbbb6e135d",
+                            "sources": [
+                                {
+                                    "GUID": "c5d65cd6-fa4b-4dc6-9314-3e10b9a6ffda",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "Password",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "e752dbb9-0b2e-4f00-b688-b6894eb3775a",
+                                    "lineageSourceGUID": "5c3a9f60-4fcf-4cdd-b06b-13af78df78f4",
+                                    "lineageSourceAttrBusName": "Password",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "childRelationships": [],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "DataNascimento",
+                            "isActivated": true,
+                            "type": "date",
+                            "primaryKey": false,
+                            "required": true,
+                            "default": "",
+                            "GUID": "4cf6813c-ceb7-454d-9fbf-0094f96ab6bb",
+                            "sources": [
+                                {
+                                    "GUID": "74390f78-0b54-448d-8e69-79704591d6e9",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "DataNascimento",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "969a7f50-ff3c-4e14-89cd-c646a9c4388d",
+                                    "lineageSourceGUID": "5c3a9f60-4fcf-4cdd-b06b-13af78df78f4",
+                                    "lineageSourceAttrBusName": "DataNascimento",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "childRelationships": [],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "DataCriacao",
+                            "isActivated": true,
+                            "type": "date",
+                            "primaryKey": false,
+                            "required": true,
+                            "default": "",
+                            "GUID": "2ce49991-dd40-44a9-b5fa-e4626888873e",
+                            "sources": [
+                                {
+                                    "GUID": "0018fdea-20fe-41a7-8321-ee808160072a",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "DataCriacao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "80566945-808e-4145-8e25-dfc726e5225e",
+                                    "lineageSourceGUID": "5c3a9f60-4fcf-4cdd-b06b-13af78df78f4",
+                                    "lineageSourceAttrBusName": "DataCriacao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "childRelationships": [],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Geolocalizacao",
+                            "isActivated": true,
+                            "type": "string",
+                            "required": false,
+                            "maxLength": 255,
+                            "primaryKey": false,
+                            "GUID": "bca5c06b-6d03-4066-a314-f443b9d0f8b6",
+                            "sources": [
+                                {
+                                    "GUID": "ba78185c-9ae1-4bab-980f-9ff9784f1b71",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "Geolocalizacao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "8aac04d8-6d1e-45bb-97d2-b57088d87d96",
+                                    "lineageSourceGUID": "5c3a9f60-4fcf-4cdd-b06b-13af78df78f4",
+                                    "lineageSourceAttrBusName": "Geolocalizacao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "childRelationships": [],
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "GUID": "4bfc77a3-4475-48ef-8c70-fbbd99e32a1d",
+                    "required": true,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "2d015b5e-4768-4604-a5dd-97e3d42086ad",
+                            "lineageSourceGUID": "5c3a9f60-4fcf-4cdd-b06b-13af78df78f4",
+                            "lineageSourceAttrBusName": "",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "Utilizador",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": "",
+                            "lineageForeignKeys": {
+                                "code": "",
+                                "name": "IdUtilizador1FK",
+                                "sources": [
+                                    {
+                                        "GUID": "47e6a00d-0312-4cf6-bafd-288f58ec222b",
+                                        "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                        "lineageSourceAttrBusName": "IdUtilizador1FK",
+                                        "lineageSourceAttrTechName": "",
+                                        "lineageSrcEntityBusName": "Amizades",
+                                        "lineageSrcEntityTechName": "",
+                                        "lineageSourceContainerBusName": "dbo",
+                                        "lineageSourceContainerTechName": ""
+                                    }
+                                ],
+                                "mode": "integer32",
+                                "type": "numeric",
+                                "lineageReferredField": {
+                                    "code": "",
+                                    "name": "IdUtilizador",
+                                    "sources": [
+                                        {
+                                            "GUID": "87db19ed-00ab-4b42-825f-39277c4c6883",
+                                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                            "lineageSourceAttrBusName": "IdUtilizador",
+                                            "lineageSourceAttrTechName": "",
+                                            "lineageSrcEntityBusName": "Utilizador",
+                                            "lineageSrcEntityTechName": "",
+                                            "lineageSourceContainerBusName": "dbo",
+                                            "lineageSourceContainerTechName": ""
+                                        }
+                                    ],
+                                    "mode": "integer32",
+                                    "type": "numeric"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Utilizador(1)",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "name": "IdUtilizador",
+                            "isActivated": true,
+                            "type": "numeric",
+                            "required": true,
+                            "mode": "integer32",
+                            "primaryKey": false,
+                            "GUID": "68f751bc-ba7d-4fcb-bd1b-f5b09f850774",
+                            "childRelationships": [],
+                            "sources": [
+                                {
+                                    "GUID": "87db19ed-00ab-4b42-825f-39277c4c6883",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "IdUtilizador",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "774c124d-eeca-45f1-beba-a562dc0620ae",
+                                    "lineageSourceGUID": "5c3a9f60-4fcf-4cdd-b06b-13af78df78f4",
+                                    "lineageSourceAttrBusName": "IdUtilizador",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Nome",
+                            "isActivated": true,
+                            "type": "string",
+                            "required": true,
+                            "maxLength": 255,
+                            "primaryKey": false,
+                            "GUID": "819e533b-1b8e-49bc-8e7f-e53a16b48547",
+                            "sources": [
+                                {
+                                    "GUID": "536efbdb-1a72-450d-ac6c-7fc2c93308d5",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "Nome",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "9b972f45-59f8-4bac-837b-ec901be5efea",
+                                    "lineageSourceGUID": "5c3a9f60-4fcf-4cdd-b06b-13af78df78f4",
+                                    "lineageSourceAttrBusName": "Nome",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "childRelationships": [],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Email",
+                            "isActivated": true,
+                            "type": "string",
+                            "required": true,
+                            "maxLength": 255,
+                            "primaryKey": false,
+                            "GUID": "9a2236be-8de6-4181-8a36-8e2ba04df899",
+                            "sources": [
+                                {
+                                    "GUID": "ee81974e-7712-4cea-9a2d-53353c945daf",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "Email",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "e7743eec-5d4c-4f89-8a58-5a40600357f1",
+                                    "lineageSourceGUID": "5c3a9f60-4fcf-4cdd-b06b-13af78df78f4",
+                                    "lineageSourceAttrBusName": "Email",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "childRelationships": [],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Password",
+                            "isActivated": true,
+                            "type": "string",
+                            "required": true,
+                            "maxLength": 255,
+                            "primaryKey": false,
+                            "GUID": "376154dd-05bc-4671-bb30-98d06e757371",
+                            "sources": [
+                                {
+                                    "GUID": "c5d65cd6-fa4b-4dc6-9314-3e10b9a6ffda",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "Password",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "26d34bc5-6fa7-4614-ab42-3698e5961322",
+                                    "lineageSourceGUID": "5c3a9f60-4fcf-4cdd-b06b-13af78df78f4",
+                                    "lineageSourceAttrBusName": "Password",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "childRelationships": [],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "DataNascimento",
+                            "isActivated": true,
+                            "type": "date",
+                            "primaryKey": false,
+                            "required": true,
+                            "default": "",
+                            "GUID": "39a61188-71ab-4137-97b3-8cdaf82573a8",
+                            "sources": [
+                                {
+                                    "GUID": "74390f78-0b54-448d-8e69-79704591d6e9",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "DataNascimento",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "3de53ab1-ce2d-4041-9d1f-c6d27f005c0c",
+                                    "lineageSourceGUID": "5c3a9f60-4fcf-4cdd-b06b-13af78df78f4",
+                                    "lineageSourceAttrBusName": "DataNascimento",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "childRelationships": [],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "DataCriacao",
+                            "isActivated": true,
+                            "type": "date",
+                            "primaryKey": false,
+                            "required": true,
+                            "default": "",
+                            "GUID": "75b94f82-8171-4c1e-a634-662e448d07d4",
+                            "sources": [
+                                {
+                                    "GUID": "0018fdea-20fe-41a7-8321-ee808160072a",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "DataCriacao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "f749bfd5-e0cf-4f73-882f-e56df5ae4753",
+                                    "lineageSourceGUID": "5c3a9f60-4fcf-4cdd-b06b-13af78df78f4",
+                                    "lineageSourceAttrBusName": "DataCriacao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "childRelationships": [],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Geolocalizacao",
+                            "isActivated": true,
+                            "type": "string",
+                            "required": false,
+                            "maxLength": 255,
+                            "primaryKey": false,
+                            "GUID": "e50d2116-b397-4c27-9a7d-a40bf1e4eaed",
+                            "sources": [
+                                {
+                                    "GUID": "ba78185c-9ae1-4bab-980f-9ff9784f1b71",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "Geolocalizacao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "750c3f69-0e76-43f4-a479-830ddac12ca1",
+                                    "lineageSourceGUID": "5c3a9f60-4fcf-4cdd-b06b-13af78df78f4",
+                                    "lineageSourceAttrBusName": "Geolocalizacao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "childRelationships": [],
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "GUID": "1b000270-82fc-4467-ba84-c279b26b04b0",
+                    "required": true,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "6b78a407-57f8-48ce-9868-291757048c7a",
+                            "lineageSourceGUID": "5c3a9f60-4fcf-4cdd-b06b-13af78df78f4",
+                            "lineageSourceAttrBusName": "",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "Utilizador",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": "",
+                            "lineageForeignKeys": {
+                                "code": "",
+                                "name": "IdUtilizador2FK",
+                                "sources": [
+                                    {
+                                        "GUID": "71687053-313f-4d7c-bee9-81a6c4759381",
+                                        "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                        "lineageSourceAttrBusName": "IdUtilizador2FK",
+                                        "lineageSourceAttrTechName": "",
+                                        "lineageSrcEntityBusName": "Amizades",
+                                        "lineageSrcEntityTechName": "",
+                                        "lineageSourceContainerBusName": "dbo",
+                                        "lineageSourceContainerTechName": ""
+                                    }
+                                ],
+                                "mode": "integer32",
+                                "type": "numeric",
+                                "lineageReferredField": {
+                                    "code": "",
+                                    "name": "IdUtilizador",
+                                    "sources": [
+                                        {
+                                            "GUID": "87db19ed-00ab-4b42-825f-39277c4c6883",
+                                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                            "lineageSourceAttrBusName": "IdUtilizador",
+                                            "lineageSourceAttrTechName": "",
+                                            "lineageSrcEntityBusName": "Utilizador",
+                                            "lineageSrcEntityTechName": "",
+                                            "lineageSourceContainerBusName": "dbo",
+                                            "lineageSourceContainerTechName": ""
+                                        }
+                                    ],
+                                    "mode": "integer32",
+                                    "type": "numeric"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "213812b5-578d-4038-bfba-804ba1089eb5"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "11cf49c4-5320-44ae-bd3e-5716653b81b5",
+            "code": "",
+            "bucketId": "82305add-3186-4377-84c1-3283a3c9af4c",
+            "comments": "",
+            "description": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "ElementosEquipa",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "Equipa",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "name": "IdEquipa",
+                            "isActivated": true,
+                            "type": "numeric",
+                            "required": true,
+                            "mode": "integer32",
+                            "primaryKey": false,
+                            "GUID": "04405041-bb57-4a22-8c56-796a2b5ffda5",
+                            "childRelationships": [],
+                            "sources": [
+                                {
+                                    "GUID": "31d30859-9a51-4a2c-bacc-a395e1fcb90e",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "IdEquipa",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Equipa",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "26ddf4d4-415a-4222-9e67-f6ca6033cef0",
+                                    "lineageSourceGUID": "e2f78ccb-a714-4bba-b824-bcf0d888885c",
+                                    "lineageSourceAttrBusName": "IdEquipa",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Equipa",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "NomeEquipa",
+                            "isActivated": true,
+                            "type": "string",
+                            "required": true,
+                            "maxLength": 255,
+                            "primaryKey": false,
+                            "GUID": "833af27c-8224-48a9-a8ea-dd0bc5c6d4a9",
+                            "sources": [
+                                {
+                                    "GUID": "121962ed-0965-43a3-a50e-0a199b0984d5",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "NomeEquipa",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Equipa",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "1d5ee9a2-4906-48cc-97b0-1b77dafb5431",
+                                    "lineageSourceGUID": "e2f78ccb-a714-4bba-b824-bcf0d888885c",
+                                    "lineageSourceAttrBusName": "NomeEquipa",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Equipa",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "childRelationships": [],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "DataCriacao",
+                            "isActivated": true,
+                            "type": "date",
+                            "primaryKey": false,
+                            "required": true,
+                            "default": "",
+                            "GUID": "d3c58aa6-0001-4438-b78b-e5d33428331f",
+                            "sources": [
+                                {
+                                    "GUID": "a6c8cf49-96a5-416a-b1c9-a829bac270e7",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "DataCriacao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Equipa",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "a3aa0440-c320-4061-8d5b-a835d7011eed",
+                                    "lineageSourceGUID": "e2f78ccb-a714-4bba-b824-bcf0d888885c",
+                                    "lineageSourceAttrBusName": "DataCriacao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Equipa",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "childRelationships": [],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "IdUtilizadorCapitaoFK",
+                            "isActivated": true,
+                            "type": "numeric",
+                            "required": true,
+                            "mode": "integer32",
+                            "primaryKey": false,
+                            "GUID": "2461c70d-8cd2-44cc-a4a5-3a51023b69ee",
+                            "sources": [
+                                {
+                                    "GUID": "d33445de-c0e4-43df-9740-ad70db60b8c2",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "IdUtilizadorCapitaoFK",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Equipa",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "45aef74b-adca-4448-b5c3-fbce25c52f7e",
+                                    "lineageSourceGUID": "e2f78ccb-a714-4bba-b824-bcf0d888885c",
+                                    "lineageSourceAttrBusName": "IdUtilizadorCapitaoFK",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Equipa",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "childRelationships": [],
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "GUID": "fcbd79cf-45e3-40b9-b70f-49e0a1e0c80b",
+                    "required": true,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "4fa75bd0-f42a-43b6-9122-6d838360a6aa",
+                            "lineageSourceGUID": "e2f78ccb-a714-4bba-b824-bcf0d888885c",
+                            "lineageSourceAttrBusName": "",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "Equipa",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": "",
+                            "lineageForeignKeys": {
+                                "code": "",
+                                "name": "IdEquipaFK",
+                                "sources": [
+                                    {
+                                        "GUID": "05971ede-064c-4c8f-9e28-544941542771",
+                                        "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                        "lineageSourceAttrBusName": "IdEquipaFK",
+                                        "lineageSourceAttrTechName": "",
+                                        "lineageSrcEntityBusName": "ElementosEquipa",
+                                        "lineageSrcEntityTechName": "",
+                                        "lineageSourceContainerBusName": "dbo",
+                                        "lineageSourceContainerTechName": ""
+                                    }
+                                ],
+                                "mode": "integer32",
+                                "type": "numeric",
+                                "lineageReferredField": {
+                                    "code": "",
+                                    "name": "IdEquipa",
+                                    "sources": [
+                                        {
+                                            "GUID": "31d30859-9a51-4a2c-bacc-a395e1fcb90e",
+                                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                            "lineageSourceAttrBusName": "IdEquipa",
+                                            "lineageSourceAttrTechName": "",
+                                            "lineageSrcEntityBusName": "Equipa",
+                                            "lineageSrcEntityTechName": "",
+                                            "lineageSourceContainerBusName": "dbo",
+                                            "lineageSourceContainerTechName": ""
+                                        }
+                                    ],
+                                    "mode": "integer32",
+                                    "type": "numeric"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Utilizador",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "name": "IdUtilizador",
+                            "isActivated": true,
+                            "type": "numeric",
+                            "required": true,
+                            "mode": "integer32",
+                            "primaryKey": false,
+                            "GUID": "e860a754-5f27-4f73-8ef9-0762330b5a88",
+                            "childRelationships": [],
+                            "sources": [
+                                {
+                                    "GUID": "87db19ed-00ab-4b42-825f-39277c4c6883",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "IdUtilizador",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "a5937beb-10b2-40e6-83ae-f91541d23fd1",
+                                    "lineageSourceGUID": "ed2de58e-1723-4ea8-a0e9-a682e34f2c5d",
+                                    "lineageSourceAttrBusName": "IdUtilizador",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Nome",
+                            "isActivated": true,
+                            "type": "string",
+                            "required": true,
+                            "maxLength": 255,
+                            "primaryKey": false,
+                            "GUID": "275abe83-1b98-4e9a-8c6e-4b432f9425c0",
+                            "sources": [
+                                {
+                                    "GUID": "536efbdb-1a72-450d-ac6c-7fc2c93308d5",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "Nome",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "293bdeea-08c6-4434-a5eb-10f954534bfe",
+                                    "lineageSourceGUID": "ed2de58e-1723-4ea8-a0e9-a682e34f2c5d",
+                                    "lineageSourceAttrBusName": "Nome",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "childRelationships": [],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Email",
+                            "isActivated": true,
+                            "type": "string",
+                            "required": true,
+                            "maxLength": 255,
+                            "primaryKey": false,
+                            "GUID": "aa78f633-7a28-4434-bb3a-23e7b870379f",
+                            "sources": [
+                                {
+                                    "GUID": "ee81974e-7712-4cea-9a2d-53353c945daf",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "Email",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "b8a27b0e-851a-4143-bfc4-d1d4f385ef85",
+                                    "lineageSourceGUID": "ed2de58e-1723-4ea8-a0e9-a682e34f2c5d",
+                                    "lineageSourceAttrBusName": "Email",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "childRelationships": [],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Password",
+                            "isActivated": true,
+                            "type": "string",
+                            "required": true,
+                            "maxLength": 255,
+                            "primaryKey": false,
+                            "GUID": "38527563-eff7-440a-871f-4cb87798988f",
+                            "sources": [
+                                {
+                                    "GUID": "c5d65cd6-fa4b-4dc6-9314-3e10b9a6ffda",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "Password",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "25041045-4c89-4f9e-8ee4-477018ee305f",
+                                    "lineageSourceGUID": "ed2de58e-1723-4ea8-a0e9-a682e34f2c5d",
+                                    "lineageSourceAttrBusName": "Password",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "childRelationships": [],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "DataNascimento",
+                            "isActivated": true,
+                            "type": "date",
+                            "primaryKey": false,
+                            "required": true,
+                            "default": "",
+                            "GUID": "1de49d47-0522-497e-b5ed-4b270b60efff",
+                            "sources": [
+                                {
+                                    "GUID": "74390f78-0b54-448d-8e69-79704591d6e9",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "DataNascimento",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "225bb338-d041-4f86-bd4b-cf7ad3951d20",
+                                    "lineageSourceGUID": "ed2de58e-1723-4ea8-a0e9-a682e34f2c5d",
+                                    "lineageSourceAttrBusName": "DataNascimento",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "childRelationships": [],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "DataCriacao",
+                            "isActivated": true,
+                            "type": "date",
+                            "primaryKey": false,
+                            "required": true,
+                            "default": "",
+                            "GUID": "7bbbdb0f-6776-40a4-82f7-d1e03fee055a",
+                            "sources": [
+                                {
+                                    "GUID": "0018fdea-20fe-41a7-8321-ee808160072a",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "DataCriacao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "fb614289-6981-452a-956c-6625ba5818e3",
+                                    "lineageSourceGUID": "ed2de58e-1723-4ea8-a0e9-a682e34f2c5d",
+                                    "lineageSourceAttrBusName": "DataCriacao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "childRelationships": [],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Geolocalizacao",
+                            "isActivated": true,
+                            "type": "string",
+                            "required": false,
+                            "maxLength": 255,
+                            "primaryKey": false,
+                            "GUID": "ce1932d1-cb5e-4b50-a649-17fbcb675963",
+                            "sources": [
+                                {
+                                    "GUID": "ba78185c-9ae1-4bab-980f-9ff9784f1b71",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "Geolocalizacao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "26ca7d7d-2777-463d-ae64-3c99d5cb8a64",
+                                    "lineageSourceGUID": "ed2de58e-1723-4ea8-a0e9-a682e34f2c5d",
+                                    "lineageSourceAttrBusName": "Geolocalizacao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "childRelationships": [],
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "GUID": "c64be67d-c660-43d0-a0f6-f14366cbaff3",
+                    "required": true,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "b96fbec4-ad31-454f-af0a-0428beb62a12",
+                            "lineageSourceGUID": "ed2de58e-1723-4ea8-a0e9-a682e34f2c5d",
+                            "lineageSourceAttrBusName": "",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "Utilizador",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": "",
+                            "lineageForeignKeys": {
+                                "code": "",
+                                "name": "IdUtilizadorFK",
+                                "sources": [
+                                    {
+                                        "GUID": "87776778-33d4-4f54-b3af-8794052b2e0e",
+                                        "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                        "lineageSourceAttrBusName": "IdUtilizadorFK",
+                                        "lineageSourceAttrTechName": "",
+                                        "lineageSrcEntityBusName": "ElementosEquipa",
+                                        "lineageSrcEntityTechName": "",
+                                        "lineageSourceContainerBusName": "dbo",
+                                        "lineageSourceContainerTechName": ""
+                                    }
+                                ],
+                                "mode": "integer32",
+                                "type": "numeric",
+                                "lineageReferredField": {
+                                    "code": "",
+                                    "name": "IdUtilizador",
+                                    "sources": [
+                                        {
+                                            "GUID": "87db19ed-00ab-4b42-825f-39277c4c6883",
+                                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                            "lineageSourceAttrBusName": "IdUtilizador",
+                                            "lineageSourceAttrTechName": "",
+                                            "lineageSrcEntityBusName": "Utilizador",
+                                            "lineageSrcEntityTechName": "",
+                                            "lineageSourceContainerBusName": "dbo",
+                                            "lineageSourceContainerTechName": ""
+                                        }
+                                    ],
+                                    "mode": "integer32",
+                                    "type": "numeric"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "a5f50d31-4fdb-4715-96ef-b8d09e6a8124"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "0d235bb2-31a0-47c4-89f9-455d2db38f08",
+            "code": "",
+            "bucketId": "82305add-3186-4377-84c1-3283a3c9af4c",
+            "comments": "",
+            "description": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "Equipa",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "IdEquipa",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "required": true,
+                    "mode": "integer32",
+                    "primaryKey": true,
+                    "GUID": "ea784578-125d-44a2-a2ac-f6fb497b218d",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "31d30859-9a51-4a2c-bacc-a395e1fcb90e",
+                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                            "lineageSourceAttrBusName": "IdEquipa",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "Equipa",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "NomeEquipa",
+                    "isActivated": true,
+                    "type": "string",
+                    "required": true,
+                    "maxLength": 255,
+                    "primaryKey": false,
+                    "GUID": "796abbc1-1510-4fc2-81ed-ae74bbcd38d7",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "121962ed-0965-43a3-a50e-0a199b0984d5",
+                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                            "lineageSourceAttrBusName": "NomeEquipa",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "Equipa",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "DataCriacao",
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "required": true,
+                    "default": "",
+                    "GUID": "f006bfbd-8676-4fd7-a24e-a9c9582abeed",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "a6c8cf49-96a5-416a-b1c9-a829bac270e7",
+                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                            "lineageSourceAttrBusName": "DataCriacao",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "Equipa",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Utilizador",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "name": "IdUtilizador",
+                            "isActivated": true,
+                            "type": "numeric",
+                            "required": true,
+                            "mode": "integer32",
+                            "primaryKey": false,
+                            "GUID": "7c07964e-6a9d-4285-97ea-8b4321a471e7",
+                            "childRelationships": [],
+                            "sources": [
+                                {
+                                    "GUID": "87db19ed-00ab-4b42-825f-39277c4c6883",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "IdUtilizador",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "71905fe8-9124-44b3-971f-e512ae48ed5e",
+                                    "lineageSourceGUID": "0ad5e22f-0d6b-4411-9e62-447f3f78d4f4",
+                                    "lineageSourceAttrBusName": "IdUtilizador",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Nome",
+                            "isActivated": true,
+                            "type": "string",
+                            "required": true,
+                            "maxLength": 255,
+                            "primaryKey": false,
+                            "GUID": "ed24e5c4-24e6-417e-98c6-946378e25af4",
+                            "sources": [
+                                {
+                                    "GUID": "536efbdb-1a72-450d-ac6c-7fc2c93308d5",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "Nome",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "14a62e22-3e3f-4810-9811-77b24792d265",
+                                    "lineageSourceGUID": "0ad5e22f-0d6b-4411-9e62-447f3f78d4f4",
+                                    "lineageSourceAttrBusName": "Nome",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "childRelationships": [],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Email",
+                            "isActivated": true,
+                            "type": "string",
+                            "required": true,
+                            "maxLength": 255,
+                            "primaryKey": false,
+                            "GUID": "b7dd04a3-5425-44a1-a699-4085f804c315",
+                            "sources": [
+                                {
+                                    "GUID": "ee81974e-7712-4cea-9a2d-53353c945daf",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "Email",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "f209f7b9-2a1c-4fe8-a525-93180fe71b04",
+                                    "lineageSourceGUID": "0ad5e22f-0d6b-4411-9e62-447f3f78d4f4",
+                                    "lineageSourceAttrBusName": "Email",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "childRelationships": [],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Password",
+                            "isActivated": true,
+                            "type": "string",
+                            "required": true,
+                            "maxLength": 255,
+                            "primaryKey": false,
+                            "GUID": "378c89ca-3fe8-47ba-aa6e-789261e941ec",
+                            "sources": [
+                                {
+                                    "GUID": "c5d65cd6-fa4b-4dc6-9314-3e10b9a6ffda",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "Password",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "583eb4ba-011a-406a-81a1-853909b30b44",
+                                    "lineageSourceGUID": "0ad5e22f-0d6b-4411-9e62-447f3f78d4f4",
+                                    "lineageSourceAttrBusName": "Password",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "childRelationships": [],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "DataNascimento",
+                            "isActivated": true,
+                            "type": "date",
+                            "primaryKey": false,
+                            "required": true,
+                            "default": "",
+                            "GUID": "6a88d323-4747-42d7-af6f-0474749752f0",
+                            "sources": [
+                                {
+                                    "GUID": "74390f78-0b54-448d-8e69-79704591d6e9",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "DataNascimento",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "cf7b6249-9038-431a-b502-1de2398a1d0d",
+                                    "lineageSourceGUID": "0ad5e22f-0d6b-4411-9e62-447f3f78d4f4",
+                                    "lineageSourceAttrBusName": "DataNascimento",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "childRelationships": [],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "DataCriacao",
+                            "isActivated": true,
+                            "type": "date",
+                            "primaryKey": false,
+                            "required": true,
+                            "default": "",
+                            "GUID": "0de65937-668d-42e5-94fc-0bf6c10ed09a",
+                            "sources": [
+                                {
+                                    "GUID": "0018fdea-20fe-41a7-8321-ee808160072a",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "DataCriacao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "b2409004-2d76-4df6-9192-f10f01161007",
+                                    "lineageSourceGUID": "0ad5e22f-0d6b-4411-9e62-447f3f78d4f4",
+                                    "lineageSourceAttrBusName": "DataCriacao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "childRelationships": [],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Geolocalizacao",
+                            "isActivated": true,
+                            "type": "string",
+                            "required": false,
+                            "maxLength": 255,
+                            "primaryKey": false,
+                            "GUID": "13c1494a-a413-4581-815d-8935593d5759",
+                            "sources": [
+                                {
+                                    "GUID": "ba78185c-9ae1-4bab-980f-9ff9784f1b71",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "Geolocalizacao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "69d97108-7793-41e4-8683-b58213e36a37",
+                                    "lineageSourceGUID": "0ad5e22f-0d6b-4411-9e62-447f3f78d4f4",
+                                    "lineageSourceAttrBusName": "Geolocalizacao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "childRelationships": [],
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "GUID": "d4425c7b-298d-4fe8-9e39-c1a6c0620d4f",
+                    "required": true,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "23797888-2120-4037-9c42-7cac7419a234",
+                            "lineageSourceGUID": "0ad5e22f-0d6b-4411-9e62-447f3f78d4f4",
+                            "lineageSourceAttrBusName": "",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "Utilizador",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": "",
+                            "lineageForeignKeys": {
+                                "code": "",
+                                "name": "IdUtilizadorCapitaoFK",
+                                "sources": [
+                                    {
+                                        "GUID": "d33445de-c0e4-43df-9740-ad70db60b8c2",
+                                        "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                        "lineageSourceAttrBusName": "IdUtilizadorCapitaoFK",
+                                        "lineageSourceAttrTechName": "",
+                                        "lineageSrcEntityBusName": "Equipa",
+                                        "lineageSrcEntityTechName": "",
+                                        "lineageSourceContainerBusName": "dbo",
+                                        "lineageSourceContainerTechName": ""
+                                    }
+                                ],
+                                "mode": "integer32",
+                                "type": "numeric",
+                                "lineageReferredField": {
+                                    "code": "",
+                                    "name": "IdUtilizador",
+                                    "sources": [
+                                        {
+                                            "GUID": "87db19ed-00ab-4b42-825f-39277c4c6883",
+                                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                            "lineageSourceAttrBusName": "IdUtilizador",
+                                            "lineageSourceAttrTechName": "",
+                                            "lineageSrcEntityBusName": "Utilizador",
+                                            "lineageSrcEntityTechName": "",
+                                            "lineageSourceContainerBusName": "dbo",
+                                            "lineageSourceContainerTechName": ""
+                                        }
+                                    ],
+                                    "mode": "integer32",
+                                    "type": "numeric"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "6f74c1c8-3eb7-4c55-96b5-e9658bada95e"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "916e4412-8ef9-4964-9339-f5db126e9704",
+            "code": "",
+            "bucketId": "82305add-3186-4377-84c1-3283a3c9af4c",
+            "comments": "",
+            "description": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "JogoFutebol",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "IdJogoFutebol",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "required": true,
+                    "mode": "integer32",
+                    "primaryKey": false,
+                    "GUID": "88155606-cbb6-4325-a0c1-cc5911eee93e",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "33c2a2f9-f381-42c1-807d-72f31eb58ca1",
+                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                            "lineageSourceAttrBusName": "IdJogoFutebol",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "JogoFutebol",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "IDEquipaVencedora",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "required": false,
+                    "mode": "integer32",
+                    "primaryKey": false,
+                    "GUID": "1dda90c7-49fd-43c3-a62a-2a975ba632f6",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "25410f51-6f9d-412c-b137-c2eb058a56c1",
+                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                            "lineageSourceAttrBusName": "IDEquipaVencedora",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "JogoFutebol",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "GolosEquipa1",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "required": false,
+                    "mode": "integer32",
+                    "primaryKey": false,
+                    "GUID": "af265421-c5e6-4e7d-913f-3930facf7985",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "45e5815e-70a6-49fd-86c8-552b4c946aaa",
+                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                            "lineageSourceAttrBusName": "GolosEquipa1",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "JogoFutebol",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "GolosEquipa2",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "required": false,
+                    "mode": "integer32",
+                    "primaryKey": false,
+                    "GUID": "c4cfc900-265b-4323-90a0-7d26b42f2a51",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "bc9cf64e-f324-421b-bd1e-92e9371a96bc",
+                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                            "lineageSourceAttrBusName": "GolosEquipa2",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "JogoFutebol",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "HorarioJogo",
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "required": true,
+                    "default": "",
+                    "GUID": "d3b275b3-53e3-4971-9eca-3a6690bbb108",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "8847fb71-e990-4604-bf5f-32249c520297",
+                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                            "lineageSourceAttrBusName": "HorarioJogo",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "JogoFutebol",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "Localizacao",
+                    "isActivated": true,
+                    "type": "string",
+                    "required": true,
+                    "maxLength": 255,
+                    "primaryKey": false,
+                    "GUID": "89e8371b-bf80-42c1-b7d8-ed7e13c3b243",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "d6a238be-4883-4b6f-a85e-8ae3694ab49b",
+                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                            "lineageSourceAttrBusName": "Localizacao",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "JogoFutebol",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "Status",
+                    "isActivated": true,
+                    "type": "string",
+                    "required": true,
+                    "maxLength": 255,
+                    "primaryKey": true,
+                    "GUID": "02426d5a-26d3-4c09-bada-6e97450daa06",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "c1056c33-f5ac-4e65-a79a-895a15108552",
+                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                            "lineageSourceAttrBusName": "Status",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "JogoFutebol",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Equipa",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "name": "IdEquipa",
+                            "isActivated": true,
+                            "type": "numeric",
+                            "required": true,
+                            "mode": "integer32",
+                            "primaryKey": false,
+                            "GUID": "999170b6-4b86-4cff-a8df-1bfb0ef782ab",
+                            "childRelationships": [],
+                            "sources": [
+                                {
+                                    "GUID": "31d30859-9a51-4a2c-bacc-a395e1fcb90e",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "IdEquipa",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Equipa",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "0485902c-e7e4-431f-9327-2cae3cabcbbc",
+                                    "lineageSourceGUID": "fe8c3c54-1603-4e98-b961-b64395905b7a",
+                                    "lineageSourceAttrBusName": "IdEquipa",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Equipa",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "NomeEquipa",
+                            "isActivated": true,
+                            "type": "string",
+                            "required": true,
+                            "maxLength": 255,
+                            "primaryKey": false,
+                            "GUID": "746a2cf9-0b89-4b7f-9949-6968dd8c1d7b",
+                            "sources": [
+                                {
+                                    "GUID": "121962ed-0965-43a3-a50e-0a199b0984d5",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "NomeEquipa",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Equipa",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "212cfd4a-7737-4a28-99bd-e6666db3cac8",
+                                    "lineageSourceGUID": "fe8c3c54-1603-4e98-b961-b64395905b7a",
+                                    "lineageSourceAttrBusName": "NomeEquipa",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Equipa",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "DataCriacao",
+                            "isActivated": true,
+                            "type": "date",
+                            "primaryKey": false,
+                            "required": true,
+                            "default": "",
+                            "GUID": "212b1895-287f-4000-8752-a30200df91cd",
+                            "sources": [
+                                {
+                                    "GUID": "a6c8cf49-96a5-416a-b1c9-a829bac270e7",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "DataCriacao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Equipa",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "a6cb1802-b64f-40ce-af26-552e427f98b3",
+                                    "lineageSourceGUID": "fe8c3c54-1603-4e98-b961-b64395905b7a",
+                                    "lineageSourceAttrBusName": "DataCriacao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Equipa",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "IdUtilizadorCapitaoFK",
+                            "isActivated": true,
+                            "type": "numeric",
+                            "required": true,
+                            "mode": "integer32",
+                            "primaryKey": false,
+                            "GUID": "7cf72295-ecbb-45f2-b12a-a07c80e93466",
+                            "sources": [
+                                {
+                                    "GUID": "d33445de-c0e4-43df-9740-ad70db60b8c2",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "IdUtilizadorCapitaoFK",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Equipa",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "e9327753-47c4-4656-85ef-69b74c2bc5a5",
+                                    "lineageSourceGUID": "fe8c3c54-1603-4e98-b961-b64395905b7a",
+                                    "lineageSourceAttrBusName": "IdUtilizadorCapitaoFK",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Equipa",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "GUID": "7c295a70-bc8b-4d5a-9472-4951f57a79e8",
+                    "required": true,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "a2e539a8-1273-4f72-8344-0485af200e6e",
+                            "lineageSourceGUID": "fe8c3c54-1603-4e98-b961-b64395905b7a",
+                            "lineageSourceAttrBusName": "",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "Equipa",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": "",
+                            "lineageForeignKeys": {
+                                "code": "",
+                                "name": "IdEquipa1FK",
+                                "sources": [
+                                    {
+                                        "GUID": "11492327-6e68-4d8c-b14b-b015e43b8b79",
+                                        "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                        "lineageSourceAttrBusName": "IdEquipa1FK",
+                                        "lineageSourceAttrTechName": "",
+                                        "lineageSrcEntityBusName": "JogoFutebol",
+                                        "lineageSrcEntityTechName": "",
+                                        "lineageSourceContainerBusName": "dbo",
+                                        "lineageSourceContainerTechName": ""
+                                    }
+                                ],
+                                "mode": "integer32",
+                                "type": "numeric",
+                                "lineageReferredField": {
+                                    "code": "",
+                                    "name": "IdEquipa",
+                                    "sources": [
+                                        {
+                                            "GUID": "31d30859-9a51-4a2c-bacc-a395e1fcb90e",
+                                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                            "lineageSourceAttrBusName": "IdEquipa",
+                                            "lineageSourceAttrTechName": "",
+                                            "lineageSrcEntityBusName": "Equipa",
+                                            "lineageSrcEntityTechName": "",
+                                            "lineageSourceContainerBusName": "dbo",
+                                            "lineageSourceContainerTechName": ""
+                                        }
+                                    ],
+                                    "mode": "integer32",
+                                    "type": "numeric"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Equipa(1)",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "name": "IdEquipa",
+                            "isActivated": true,
+                            "type": "numeric",
+                            "required": true,
+                            "mode": "integer32",
+                            "primaryKey": false,
+                            "GUID": "ea1e538d-0a32-40ba-9340-f7a9469396cb",
+                            "childRelationships": [],
+                            "sources": [
+                                {
+                                    "GUID": "31d30859-9a51-4a2c-bacc-a395e1fcb90e",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "IdEquipa",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Equipa",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "504c9763-39e1-4ef8-8996-c3f095ddbb88",
+                                    "lineageSourceGUID": "fe8c3c54-1603-4e98-b961-b64395905b7a",
+                                    "lineageSourceAttrBusName": "IdEquipa",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Equipa",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "NomeEquipa",
+                            "isActivated": true,
+                            "type": "string",
+                            "required": true,
+                            "maxLength": 255,
+                            "primaryKey": false,
+                            "GUID": "277a4121-ab27-4751-bdab-b28b17db4056",
+                            "sources": [
+                                {
+                                    "GUID": "121962ed-0965-43a3-a50e-0a199b0984d5",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "NomeEquipa",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Equipa",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "f1607cb1-d6b7-4207-b815-996aade2cd9c",
+                                    "lineageSourceGUID": "fe8c3c54-1603-4e98-b961-b64395905b7a",
+                                    "lineageSourceAttrBusName": "NomeEquipa",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Equipa",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "DataCriacao",
+                            "isActivated": true,
+                            "type": "date",
+                            "primaryKey": false,
+                            "required": true,
+                            "default": "",
+                            "GUID": "51f6e8ab-e7c4-4626-8adb-1fce5c9e3a20",
+                            "sources": [
+                                {
+                                    "GUID": "a6c8cf49-96a5-416a-b1c9-a829bac270e7",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "DataCriacao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Equipa",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "23f5ec7a-e7a9-4df8-90d5-7dbf11e9a3ec",
+                                    "lineageSourceGUID": "fe8c3c54-1603-4e98-b961-b64395905b7a",
+                                    "lineageSourceAttrBusName": "DataCriacao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Equipa",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "IdUtilizadorCapitaoFK",
+                            "isActivated": true,
+                            "type": "numeric",
+                            "required": true,
+                            "mode": "integer32",
+                            "primaryKey": false,
+                            "GUID": "0b5d1722-ee56-47a7-bc52-5073daa0e158",
+                            "sources": [
+                                {
+                                    "GUID": "d33445de-c0e4-43df-9740-ad70db60b8c2",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "IdUtilizadorCapitaoFK",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Equipa",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "78895229-0fc6-4827-afa6-4c82fdd22886",
+                                    "lineageSourceGUID": "fe8c3c54-1603-4e98-b961-b64395905b7a",
+                                    "lineageSourceAttrBusName": "IdUtilizadorCapitaoFK",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Equipa",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "GUID": "93cca271-5921-4be1-a74b-a315963c319e",
+                    "required": true,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "4b14783d-6ee4-4ed7-a7f2-78cab6eb1836",
+                            "lineageSourceGUID": "fe8c3c54-1603-4e98-b961-b64395905b7a",
+                            "lineageSourceAttrBusName": "",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "Equipa",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": "",
+                            "lineageForeignKeys": {
+                                "code": "",
+                                "name": "IdEquipa2FK",
+                                "sources": [
+                                    {
+                                        "GUID": "5a2093c2-1136-446a-8ee2-1f72cbba7e86",
+                                        "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                        "lineageSourceAttrBusName": "IdEquipa2FK",
+                                        "lineageSourceAttrTechName": "",
+                                        "lineageSrcEntityBusName": "JogoFutebol",
+                                        "lineageSrcEntityTechName": "",
+                                        "lineageSourceContainerBusName": "dbo",
+                                        "lineageSourceContainerTechName": ""
+                                    }
+                                ],
+                                "mode": "integer32",
+                                "type": "numeric",
+                                "lineageReferredField": {
+                                    "code": "",
+                                    "name": "IdEquipa",
+                                    "sources": [
+                                        {
+                                            "GUID": "31d30859-9a51-4a2c-bacc-a395e1fcb90e",
+                                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                            "lineageSourceAttrBusName": "IdEquipa",
+                                            "lineageSourceAttrTechName": "",
+                                            "lineageSrcEntityBusName": "Equipa",
+                                            "lineageSrcEntityTechName": "",
+                                            "lineageSourceContainerBusName": "dbo",
+                                            "lineageSourceContainerTechName": ""
+                                        }
+                                    ],
+                                    "mode": "integer32",
+                                    "type": "numeric"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "fc33254a-9b47-4380-8a48-0df52654fd80"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "760fbffd-65f6-44bc-a2c7-b69d23a22b5d",
+            "code": "",
+            "bucketId": "82305add-3186-4377-84c1-3283a3c9af4c",
+            "comments": "",
+            "description": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "Logs",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "IdLog",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "required": true,
+                    "mode": "integer32",
+                    "primaryKey": true,
+                    "GUID": "713f69cd-9936-4ec5-8df4-ea897e61e5b1",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "50cd864b-55da-44c1-b5b2-aa6096c03eef",
+                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                            "lineageSourceAttrBusName": "IdLog",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "Logs",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "IdUtilizadorFK",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "required": true,
+                    "mode": "integer32",
+                    "primaryKey": false,
+                    "GUID": "b68c9f23-3d86-463a-b269-447b7b26d059",
+                    "sources": [
+                        {
+                            "GUID": "f022174c-5b6e-422a-a04e-910a8939f9c4",
+                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                            "lineageSourceAttrBusName": "IdUtilizadorFK",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "Logs",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ],
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "DataHorario",
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "required": true,
+                    "default": "",
+                    "GUID": "f155bb8d-bd25-41cc-ac81-32e4e0f3cf1f",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "c2efbe18-9325-4079-a3f5-7a7118ff5c55",
+                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                            "lineageSourceAttrBusName": "DataHorario",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "Logs",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "LogType",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "name": "IdLogType",
+                            "isActivated": true,
+                            "type": "numeric",
+                            "required": true,
+                            "mode": "integer32",
+                            "primaryKey": false,
+                            "GUID": "13b2c135-9e8e-4fe1-9298-308e39a14247",
+                            "childRelationships": [],
+                            "sources": [
+                                {
+                                    "GUID": "c4414041-800c-49fc-b2a4-08072d256def",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "IdLogType",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "LogType",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "02d77bd4-1615-4038-a567-58e8cd1ddd1f",
+                                    "lineageSourceGUID": "a49bfb20-aff4-4dc0-b4c4-a6c023bccb81",
+                                    "lineageSourceAttrBusName": "IdLogType",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "LogType",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Descricao",
+                            "isActivated": true,
+                            "type": "string",
+                            "required": true,
+                            "maxLength": 255,
+                            "primaryKey": false,
+                            "GUID": "98b325a3-6724-49b8-b1e9-d654c12a8bcf",
+                            "sources": [
+                                {
+                                    "GUID": "fbeecf02-db27-4838-9182-791cb986c90c",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "Descricao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "LogType",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "81c9fd6e-9ebf-4bb1-b4af-b12f46bbe2a8",
+                                    "lineageSourceGUID": "a49bfb20-aff4-4dc0-b4c4-a6c023bccb81",
+                                    "lineageSourceAttrBusName": "Descricao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "LogType",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "GUID": "928f9730-bb82-4e0f-8d13-925e079134cb",
+                    "required": true,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "66ac3dd8-cf02-4b52-9f78-e0dbc97506dc",
+                            "lineageSourceGUID": "a49bfb20-aff4-4dc0-b4c4-a6c023bccb81",
+                            "lineageSourceAttrBusName": "",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "LogType",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": "",
+                            "lineageForeignKeys": {
+                                "code": "",
+                                "name": "IdLogTypeFK",
+                                "sources": [
+                                    {
+                                        "GUID": "c775a0c7-92a3-43c0-8c6c-fd8bb8387e59",
+                                        "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                        "lineageSourceAttrBusName": "IdLogTypeFK",
+                                        "lineageSourceAttrTechName": "",
+                                        "lineageSrcEntityBusName": "Logs",
+                                        "lineageSrcEntityTechName": "",
+                                        "lineageSourceContainerBusName": "dbo",
+                                        "lineageSourceContainerTechName": ""
+                                    }
+                                ],
+                                "mode": "integer32",
+                                "type": "numeric",
+                                "lineageReferredField": {
+                                    "code": "",
+                                    "name": "IdLogType",
+                                    "sources": [
+                                        {
+                                            "GUID": "c4414041-800c-49fc-b2a4-08072d256def",
+                                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                            "lineageSourceAttrBusName": "IdLogType",
+                                            "lineageSourceAttrTechName": "",
+                                            "lineageSrcEntityBusName": "LogType",
+                                            "lineageSrcEntityTechName": "",
+                                            "lineageSourceContainerBusName": "dbo",
+                                            "lineageSourceContainerTechName": ""
+                                        }
+                                    ],
+                                    "mode": "integer32",
+                                    "type": "numeric"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "784b8f1d-8b2d-4a24-ba59-24a9cc570cab"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "3cc67c10-a0a7-4918-abcd-9fed76d85ed7",
+            "code": "",
+            "bucketId": "82305add-3186-4377-84c1-3283a3c9af4c",
+            "comments": "",
+            "description": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "Publicacoes",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "IdPublicacao",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "required": true,
+                    "mode": "integer32",
+                    "primaryKey": true,
+                    "GUID": "fdc0a85a-645e-43cb-b49b-2c1c39e4ea32",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "8aa6eefc-a3f5-4369-b89c-44ba523b43d3",
+                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                            "lineageSourceAttrBusName": "IdPublicacao",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "Publicacoes",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "Conteudo",
+                    "isActivated": true,
+                    "type": "string",
+                    "required": true,
+                    "maxLength": 255,
+                    "primaryKey": false,
+                    "GUID": "bc1d62f9-241d-4b2e-9f78-871aeff5db5a",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "b72e27e6-4854-4ed5-9f3e-ed0370c3210e",
+                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                            "lineageSourceAttrBusName": "Conteudo",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "Publicacoes",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "DataHorario",
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "required": true,
+                    "default": "",
+                    "GUID": "dee836c4-ae2f-4f6b-bafc-0a11af404d14",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "1b5728eb-056d-4f35-b302-47f26d6f89d9",
+                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                            "lineageSourceAttrBusName": "DataHorario",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "Publicacoes",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "Status",
+                    "isActivated": true,
+                    "type": "string",
+                    "required": true,
+                    "maxLength": 255,
+                    "primaryKey": false,
+                    "GUID": "e975247d-bfc0-4320-b2e8-94e287e91926",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "63b686fe-0356-497c-ac7a-a41effbf04e4",
+                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                            "lineageSourceAttrBusName": "Status",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "Publicacoes",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Utilizador",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "code": "",
+                            "name": "IdUtilizador",
+                            "isActivated": true,
+                            "type": "numeric",
+                            "required": true,
+                            "mode": "integer32",
+                            "primaryKey": false,
+                            "GUID": "a8f316fb-7533-497b-8fee-e88ffd30a156",
+                            "childRelationships": [],
+                            "sources": [
+                                {
+                                    "GUID": "87db19ed-00ab-4b42-825f-39277c4c6883",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "IdUtilizador",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "89517238-6a94-48d5-b1a5-512dd61b3618",
+                                    "lineageSourceGUID": "c1590392-c71a-40bd-90ed-bf77081c3b91",
+                                    "lineageSourceAttrBusName": "IdUtilizador",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Nome",
+                            "isActivated": true,
+                            "type": "string",
+                            "required": true,
+                            "maxLength": 255,
+                            "primaryKey": false,
+                            "GUID": "88617116-33df-426c-892d-48712bc2899a",
+                            "sources": [
+                                {
+                                    "GUID": "536efbdb-1a72-450d-ac6c-7fc2c93308d5",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "Nome",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "ebbc1733-5494-4cfd-85bd-f56d09e89616",
+                                    "lineageSourceGUID": "c1590392-c71a-40bd-90ed-bf77081c3b91",
+                                    "lineageSourceAttrBusName": "Nome",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Email",
+                            "isActivated": true,
+                            "type": "string",
+                            "required": true,
+                            "maxLength": 255,
+                            "primaryKey": false,
+                            "GUID": "d194a774-3ccd-4086-ac87-8bfc13a21913",
+                            "sources": [
+                                {
+                                    "GUID": "ee81974e-7712-4cea-9a2d-53353c945daf",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "Email",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "4de838cc-f1b9-4fef-b4e5-befcb0afe679",
+                                    "lineageSourceGUID": "c1590392-c71a-40bd-90ed-bf77081c3b91",
+                                    "lineageSourceAttrBusName": "Email",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Password",
+                            "isActivated": true,
+                            "type": "string",
+                            "required": true,
+                            "maxLength": 255,
+                            "primaryKey": false,
+                            "GUID": "55395845-66cd-4a8c-88f9-511009282c8e",
+                            "sources": [
+                                {
+                                    "GUID": "c5d65cd6-fa4b-4dc6-9314-3e10b9a6ffda",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "Password",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "9019b4be-a6a3-426d-9d63-81c12a19394d",
+                                    "lineageSourceGUID": "c1590392-c71a-40bd-90ed-bf77081c3b91",
+                                    "lineageSourceAttrBusName": "Password",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "DataNascimento",
+                            "isActivated": true,
+                            "type": "date",
+                            "primaryKey": false,
+                            "required": true,
+                            "default": "",
+                            "GUID": "41874dfc-28b1-4ae7-9c01-4a14454e7ab1",
+                            "sources": [
+                                {
+                                    "GUID": "74390f78-0b54-448d-8e69-79704591d6e9",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "DataNascimento",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "b727edd9-c90d-47ca-beb6-8337c6c6cafb",
+                                    "lineageSourceGUID": "c1590392-c71a-40bd-90ed-bf77081c3b91",
+                                    "lineageSourceAttrBusName": "DataNascimento",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "DataCriacao",
+                            "isActivated": true,
+                            "type": "date",
+                            "primaryKey": false,
+                            "required": true,
+                            "default": "",
+                            "GUID": "7be0888d-e0fd-4a17-a743-e70cc5a7ac16",
+                            "sources": [
+                                {
+                                    "GUID": "0018fdea-20fe-41a7-8321-ee808160072a",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "DataCriacao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "51a4dd15-2478-4e7b-9fee-96771225e16b",
+                                    "lineageSourceGUID": "c1590392-c71a-40bd-90ed-bf77081c3b91",
+                                    "lineageSourceAttrBusName": "DataCriacao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "error": {}
+                        },
+                        {
+                            "code": "",
+                            "name": "Geolocalizacao",
+                            "isActivated": true,
+                            "type": "string",
+                            "required": false,
+                            "maxLength": 255,
+                            "primaryKey": false,
+                            "GUID": "cfa1de12-8527-4fa9-91d4-345fa364015e",
+                            "sources": [
+                                {
+                                    "GUID": "ba78185c-9ae1-4bab-980f-9ff9784f1b71",
+                                    "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                    "lineageSourceAttrBusName": "Geolocalizacao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                },
+                                {
+                                    "GUID": "2bc6d0ed-c3db-42be-8c55-d17bc52a1bb2",
+                                    "lineageSourceGUID": "c1590392-c71a-40bd-90ed-bf77081c3b91",
+                                    "lineageSourceAttrBusName": "Geolocalizacao",
+                                    "lineageSourceAttrTechName": "",
+                                    "lineageSrcEntityBusName": "Utilizador",
+                                    "lineageSrcEntityTechName": "",
+                                    "lineageSourceContainerBusName": "dbo",
+                                    "lineageSourceContainerTechName": ""
+                                }
+                            ],
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "GUID": "a79b5c7b-e12d-4486-a3ef-0f13fa9389fd",
+                    "required": true,
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "8d168b63-70fc-4642-b8e1-89b0da1935d3",
+                            "lineageSourceGUID": "c1590392-c71a-40bd-90ed-bf77081c3b91",
+                            "lineageSourceAttrBusName": "",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "Utilizador",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": "",
+                            "lineageForeignKeys": {
+                                "code": "",
+                                "name": "IdUtilizadorFK",
+                                "sources": [
+                                    {
+                                        "GUID": "8cc74b3b-fae8-4f12-833c-074dadabc0ae",
+                                        "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                        "lineageSourceAttrBusName": "IdUtilizadorFK",
+                                        "lineageSourceAttrTechName": "",
+                                        "lineageSrcEntityBusName": "Publicacoes",
+                                        "lineageSrcEntityTechName": "",
+                                        "lineageSourceContainerBusName": "dbo",
+                                        "lineageSourceContainerTechName": ""
+                                    }
+                                ],
+                                "mode": "integer32",
+                                "type": "numeric",
+                                "lineageReferredField": {
+                                    "code": "",
+                                    "name": "IdUtilizador",
+                                    "sources": [
+                                        {
+                                            "GUID": "87db19ed-00ab-4b42-825f-39277c4c6883",
+                                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                                            "lineageSourceAttrBusName": "IdUtilizador",
+                                            "lineageSourceAttrTechName": "",
+                                            "lineageSrcEntityBusName": "Utilizador",
+                                            "lineageSrcEntityTechName": "",
+                                            "lineageSourceContainerBusName": "dbo",
+                                            "lineageSourceContainerTechName": ""
+                                        }
+                                    ],
+                                    "mode": "integer32",
+                                    "type": "numeric"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "a8815da8-5f28-495b-864e-0d202ea0d6ec"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "5e645405-ea49-437e-a276-a360de84245a",
+            "code": "",
+            "bucketId": "82305add-3186-4377-84c1-3283a3c9af4c",
+            "comments": "",
+            "description": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        },
+        {
+            "collectionName": "Utilizador",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "IdUtilizador",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "required": true,
+                    "mode": "integer32",
+                    "primaryKey": true,
+                    "GUID": "3c9769da-1dcc-4896-8e9c-65744b81dd42",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "87db19ed-00ab-4b42-825f-39277c4c6883",
+                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                            "lineageSourceAttrBusName": "IdUtilizador",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "Utilizador",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "Nome",
+                    "isActivated": true,
+                    "type": "string",
+                    "required": true,
+                    "maxLength": 255,
+                    "primaryKey": false,
+                    "GUID": "b5f42974-2b8a-4a37-9436-7df3fe80edd0",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "536efbdb-1a72-450d-ac6c-7fc2c93308d5",
+                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                            "lineageSourceAttrBusName": "Nome",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "Utilizador",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "Email",
+                    "isActivated": true,
+                    "type": "string",
+                    "required": true,
+                    "maxLength": 255,
+                    "primaryKey": false,
+                    "GUID": "9a17d5fe-2994-46db-92ce-8ce00110a408",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "ee81974e-7712-4cea-9a2d-53353c945daf",
+                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                            "lineageSourceAttrBusName": "Email",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "Utilizador",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "Password",
+                    "isActivated": true,
+                    "type": "string",
+                    "required": true,
+                    "maxLength": 255,
+                    "primaryKey": false,
+                    "GUID": "36c85d10-aea5-402e-a5af-553dbf8968e8",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "c5d65cd6-fa4b-4dc6-9314-3e10b9a6ffda",
+                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                            "lineageSourceAttrBusName": "Password",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "Utilizador",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "DataNascimento",
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "required": true,
+                    "default": "",
+                    "GUID": "ff731376-e753-4480-bf57-f5d1dcf4e1d1",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "74390f78-0b54-448d-8e69-79704591d6e9",
+                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                            "lineageSourceAttrBusName": "DataNascimento",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "Utilizador",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "DataCriacao",
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "required": true,
+                    "default": "",
+                    "GUID": "ccfe9660-45c6-4bb3-a3b6-d784e2a65277",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "0018fdea-20fe-41a7-8321-ee808160072a",
+                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                            "lineageSourceAttrBusName": "DataCriacao",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "Utilizador",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "Geolocalizacao",
+                    "isActivated": true,
+                    "type": "string",
+                    "required": false,
+                    "maxLength": 255,
+                    "primaryKey": false,
+                    "GUID": "7027426f-8bc5-4ddd-bffc-fe77d95ee90c",
+                    "error": {},
+                    "sources": [
+                        {
+                            "GUID": "ba78185c-9ae1-4bab-980f-9ff9784f1b71",
+                            "lineageSourceGUID": "053d6a6b-e322-4ff7-901c-313225321283",
+                            "lineageSourceAttrBusName": "Geolocalizacao",
+                            "lineageSourceAttrTechName": "",
+                            "lineageSrcEntityBusName": "Utilizador",
+                            "lineageSrcEntityTechName": "",
+                            "lineageSourceContainerBusName": "dbo",
+                            "lineageSourceContainerTechName": ""
+                        }
+                    ]
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "8f33de5c-1f65-492b-8e85-73d00cef096a"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "72674c99-97bc-4013-88b3-58f2c2609241",
+            "code": "",
+            "bucketId": "82305add-3186-4377-84c1-3283a3c9af4c",
+            "comments": "",
+            "description": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            }
+        }
+    ],
+    "buckets": [
+        {
+            "name": "dbo",
+            "type": "bucket",
+            "collectionIds": [
+                "11cf49c4-5320-44ae-bd3e-5716653b81b5",
+                "0d235bb2-31a0-47c4-89f9-455d2db38f08",
+                "916e4412-8ef9-4964-9339-f5db126e9704",
+                "760fbffd-65f6-44bc-a2c7-b69d23a22b5d",
+                "3cc67c10-a0a7-4918-abcd-9fed76d85ed7",
+                "5e645405-ea49-437e-a276-a360de84245a",
+                "72674c99-97bc-4013-88b3-58f2c2609241"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "82305add-3186-4377-84c1-3283a3c9af4c",
+            "hackoladeMeta": {}
+        }
+    ],
+    "views": [],
+    "relationships": [],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "053d6a6b-e322-4ff7-901c-313225321283": "RE'd from DDL file",
+        "82305add-3186-4377-84c1-3283a3c9af4c": "dbo",
+        "11cf49c4-5320-44ae-bd3e-5716653b81b5": "Amizades",
+        "0d235bb2-31a0-47c4-89f9-455d2db38f08": "ElementosEquipa",
+        "ea784578-125d-44a2-a2ac-f6fb497b218d": "IdEquipa",
+        "796abbc1-1510-4fc2-81ed-ae74bbcd38d7": "NomeEquipa",
+        "f006bfbd-8676-4fd7-a24e-a9c9582abeed": "DataCriacao",
+        "916e4412-8ef9-4964-9339-f5db126e9704": "Equipa",
+        "88155606-cbb6-4325-a0c1-cc5911eee93e": "IdJogoFutebol",
+        "1dda90c7-49fd-43c3-a62a-2a975ba632f6": "IDEquipaVencedora",
+        "af265421-c5e6-4e7d-913f-3930facf7985": "GolosEquipa1",
+        "c4cfc900-265b-4323-90a0-7d26b42f2a51": "GolosEquipa2",
+        "d3b275b3-53e3-4971-9eca-3a6690bbb108": "HorarioJogo",
+        "89e8371b-bf80-42c1-b7d8-ed7e13c3b243": "Localizacao",
+        "02426d5a-26d3-4c09-bada-6e97450daa06": "Status",
+        "760fbffd-65f6-44bc-a2c7-b69d23a22b5d": "JogoFutebol",
+        "713f69cd-9936-4ec5-8df4-ea897e61e5b1": "IdLog",
+        "b68c9f23-3d86-463a-b269-447b7b26d059": "IdUtilizadorFK",
+        "f155bb8d-bd25-41cc-ac81-32e4e0f3cf1f": "DataHorario",
+        "3cc67c10-a0a7-4918-abcd-9fed76d85ed7": "Logs",
+        "fdc0a85a-645e-43cb-b49b-2c1c39e4ea32": "IdPublicacao",
+        "bc1d62f9-241d-4b2e-9f78-871aeff5db5a": "Conteudo",
+        "dee836c4-ae2f-4f6b-bafc-0a11af404d14": "DataHorario",
+        "e975247d-bfc0-4320-b2e8-94e287e91926": "Status",
+        "5e645405-ea49-437e-a276-a360de84245a": "Publicacoes",
+        "3c9769da-1dcc-4896-8e9c-65744b81dd42": "IdUtilizador",
+        "b5f42974-2b8a-4a37-9436-7df3fe80edd0": "Nome",
+        "9a17d5fe-2994-46db-92ce-8ce00110a408": "Email",
+        "36c85d10-aea5-402e-a5af-553dbf8968e8": "Password",
+        "ff731376-e753-4480-bf57-f5d1dcf4e1d1": "DataNascimento",
+        "ccfe9660-45c6-4bb3-a3b6-d784e2a65277": "DataCriacao",
+        "7027426f-8bc5-4ddd-bffc-fe77d95ee90c": "Geolocalizacao",
+        "72674c99-97bc-4013-88b3-58f2c2609241": "Utilizador",
+        "a49bfb20-aff4-4dc0-b4c4-a6c023bccb81": "Denormalized data",
+        "928f9730-bb82-4e0f-8d13-925e079134cb": "LogType",
+        "13b2c135-9e8e-4fe1-9298-308e39a14247": "IdLogType",
+        "98b325a3-6724-49b8-b1e9-d654c12a8bcf": "Descricao",
+        "c1590392-c71a-40bd-90ed-bf77081c3b91": "Denormalized data(1)",
+        "a79b5c7b-e12d-4486-a3ef-0f13fa9389fd": "Utilizador",
+        "a8f316fb-7533-497b-8fee-e88ffd30a156": "IdUtilizador",
+        "88617116-33df-426c-892d-48712bc2899a": "Nome",
+        "d194a774-3ccd-4086-ac87-8bfc13a21913": "Email",
+        "55395845-66cd-4a8c-88f9-511009282c8e": "Password",
+        "41874dfc-28b1-4ae7-9c01-4a14454e7ab1": "DataNascimento",
+        "7be0888d-e0fd-4a17-a743-e70cc5a7ac16": "DataCriacao",
+        "cfa1de12-8527-4fa9-91d4-345fa364015e": "Geolocalizacao",
+        "5c3a9f60-4fcf-4cdd-b06b-13af78df78f4": "Denormalized data(2)",
+        "4bfc77a3-4475-48ef-8c70-fbbd99e32a1d": "Utilizador",
+        "1b000270-82fc-4467-ba84-c279b26b04b0": "Utilizador(1)",
+        "58f28a54-48bb-471f-8bea-ca34da935d56": "IdUtilizador",
+        "08187846-c193-4417-aea0-12fee0dec7d8": "Nome",
+        "a2b09e9c-6cbb-4c7c-9faf-72bac02bebc4": "Email",
+        "64097e53-e5d4-477d-b33b-0bdbbb6e135d": "Password",
+        "4cf6813c-ceb7-454d-9fbf-0094f96ab6bb": "DataNascimento",
+        "2ce49991-dd40-44a9-b5fa-e4626888873e": "DataCriacao",
+        "bca5c06b-6d03-4066-a314-f443b9d0f8b6": "Geolocalizacao",
+        "68f751bc-ba7d-4fcb-bd1b-f5b09f850774": "IdUtilizador",
+        "819e533b-1b8e-49bc-8e7f-e53a16b48547": "Nome",
+        "9a2236be-8de6-4181-8a36-8e2ba04df899": "Email",
+        "376154dd-05bc-4671-bb30-98d06e757371": "Password",
+        "39a61188-71ab-4137-97b3-8cdaf82573a8": "DataNascimento",
+        "75b94f82-8171-4c1e-a634-662e448d07d4": "DataCriacao",
+        "e50d2116-b397-4c27-9a7d-a40bf1e4eaed": "Geolocalizacao",
+        "fe8c3c54-1603-4e98-b961-b64395905b7a": "Denormalized data(3)",
+        "7c295a70-bc8b-4d5a-9472-4951f57a79e8": "Equipa",
+        "93cca271-5921-4be1-a74b-a315963c319e": "Equipa(1)",
+        "999170b6-4b86-4cff-a8df-1bfb0ef782ab": "IdEquipa",
+        "746a2cf9-0b89-4b7f-9949-6968dd8c1d7b": "NomeEquipa",
+        "212b1895-287f-4000-8752-a30200df91cd": "DataCriacao",
+        "7cf72295-ecbb-45f2-b12a-a07c80e93466": "IdUtilizadorCapitaoFK",
+        "ea1e538d-0a32-40ba-9340-f7a9469396cb": "IdEquipa",
+        "277a4121-ab27-4751-bdab-b28b17db4056": "NomeEquipa",
+        "51f6e8ab-e7c4-4626-8adb-1fce5c9e3a20": "DataCriacao",
+        "0b5d1722-ee56-47a7-bc52-5073daa0e158": "IdUtilizadorCapitaoFK",
+        "e2f78ccb-a714-4bba-b824-bcf0d888885c": "Denormalized data(4)",
+        "fcbd79cf-45e3-40b9-b70f-49e0a1e0c80b": "Equipa",
+        "04405041-bb57-4a22-8c56-796a2b5ffda5": "IdEquipa",
+        "833af27c-8224-48a9-a8ea-dd0bc5c6d4a9": "NomeEquipa",
+        "d3c58aa6-0001-4438-b78b-e5d33428331f": "DataCriacao",
+        "2461c70d-8cd2-44cc-a4a5-3a51023b69ee": "IdUtilizadorCapitaoFK",
+        "ed2de58e-1723-4ea8-a0e9-a682e34f2c5d": "Denormalized data(5)",
+        "c64be67d-c660-43d0-a0f6-f14366cbaff3": "Utilizador",
+        "e860a754-5f27-4f73-8ef9-0762330b5a88": "IdUtilizador",
+        "275abe83-1b98-4e9a-8c6e-4b432f9425c0": "Nome",
+        "aa78f633-7a28-4434-bb3a-23e7b870379f": "Email",
+        "38527563-eff7-440a-871f-4cb87798988f": "Password",
+        "1de49d47-0522-497e-b5ed-4b270b60efff": "DataNascimento",
+        "7bbbdb0f-6776-40a4-82f7-d1e03fee055a": "DataCriacao",
+        "ce1932d1-cb5e-4b50-a649-17fbcb675963": "Geolocalizacao",
+        "0ad5e22f-0d6b-4411-9e62-447f3f78d4f4": "Denormalized data(6)",
+        "d4425c7b-298d-4fe8-9e39-c1a6c0620d4f": "Utilizador",
+        "7c07964e-6a9d-4285-97ea-8b4321a471e7": "IdUtilizador",
+        "ed24e5c4-24e6-417e-98c6-946378e25af4": "Nome",
+        "b7dd04a3-5425-44a1-a699-4085f804c315": "Email",
+        "378c89ca-3fe8-47ba-aa6e-789261e941ec": "Password",
+        "6a88d323-4747-42d7-af6f-0474749752f0": "DataNascimento",
+        "0de65937-668d-42e5-94fc-0bf6c10ed09a": "DataCriacao",
+        "13c1494a-a413-4581-815d-8935593d5759": "Geolocalizacao"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "ef2356b2-cba0-4c82-96e1-d9d9b869bf87"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "edb7bf08-1bd9-49a7-a32a-934bfa94ee48"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "1f9cf78c-082a-4023-87b5-9a07b22d0749"
+    },
+    "sources": [
+        {
+            "GUID": "053d6a6b-e322-4ff7-901c-313225321283",
+            "sourceName": "RE'd from DDL file",
+            "lineageTimestamp": "2022-12-28 18:51:21 WET",
+            "lineageSourceType": "DDL",
+            "lineageSourceFormat": "File",
+            "lineageFilePathName": "C:\\Users\\jpint\\OneDrive\\Desktop\\Git hub\\Cantina\\BDA\\bda.sql"
+        },
+        {
+            "GUID": "a49bfb20-aff4-4dc0-b4c4-a6c023bccb81",
+            "sourceName": "Denormalized data",
+            "lineageTimestamp": "2022-12-28 19:16:47 WET",
+            "lineageSourceType": "Denormalization",
+            "lineageSourceFormat": "Model",
+            "lineageFilePathName": "Current model"
+        },
+        {
+            "GUID": "c1590392-c71a-40bd-90ed-bf77081c3b91",
+            "sourceName": "Denormalized data(1)",
+            "lineageTimestamp": "2022-12-28 19:16:47 WET",
+            "lineageSourceType": "Denormalization",
+            "lineageSourceFormat": "Model",
+            "lineageFilePathName": "Current model"
+        },
+        {
+            "GUID": "5c3a9f60-4fcf-4cdd-b06b-13af78df78f4",
+            "sourceName": "Denormalized data(2)",
+            "lineageTimestamp": "2022-12-28 19:16:47 WET",
+            "lineageSourceType": "Denormalization",
+            "lineageSourceFormat": "Model",
+            "lineageFilePathName": "Current model"
+        },
+        {
+            "GUID": "fe8c3c54-1603-4e98-b961-b64395905b7a",
+            "sourceName": "Denormalized data(3)",
+            "lineageTimestamp": "2022-12-28 19:16:47 WET",
+            "lineageSourceType": "Denormalization",
+            "lineageSourceFormat": "Model",
+            "lineageFilePathName": "Current model"
+        },
+        {
+            "GUID": "e2f78ccb-a714-4bba-b824-bcf0d888885c",
+            "sourceName": "Denormalized data(4)",
+            "lineageTimestamp": "2022-12-28 19:16:47 WET",
+            "lineageSourceType": "Denormalization",
+            "lineageSourceFormat": "Model",
+            "lineageFilePathName": "Current model"
+        },
+        {
+            "GUID": "ed2de58e-1723-4ea8-a0e9-a682e34f2c5d",
+            "sourceName": "Denormalized data(5)",
+            "lineageTimestamp": "2022-12-28 19:16:47 WET",
+            "lineageSourceType": "Denormalization",
+            "lineageSourceFormat": "Model",
+            "lineageFilePathName": "Current model"
+        },
+        {
+            "GUID": "0ad5e22f-0d6b-4411-9e62-447f3f78d4f4",
+            "sourceName": "Denormalized data(6)",
+            "lineageTimestamp": "2022-12-28 19:16:47 WET",
+            "lineageSourceType": "Denormalization",
+            "lineageSourceFormat": "Model",
+            "lineageFilePathName": "Current model"
+        }
+    ],
+    "decorativeSymbols": [],
+    "dbVersion": "v5.0",
+    "dbVendor": "MongoDB",
+    "appTarget": "MONGODB",
+    "creationTS": "2022-12-28T18:50:53.122Z",
+    "GUID": "46d9637a-7989-49fe-aed7-9457e502896f",
+    "isLineageEnabled": true,
+    "hackoladeMeta": {
+        "validationErrors": {}
+    },
+    "code": "",
+    "lastModifTS": "2022-12-28T19:18:11.159Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.8.0"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "11cf49c4-5320-44ae-bd3e-5716653b81b5",
+                        "x": 971,
+                        "y": 85,
+                        "width": 270,
+                        "height": 321,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "0d235bb2-31a0-47c4-89f9-455d2db38f08",
+                        "x": 954,
+                        "y": 450,
+                        "width": 297,
+                        "height": 267,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "916e4412-8ef9-4964-9339-f5db126e9704",
+                        "x": 229,
+                        "y": 499,
+                        "width": 270,
+                        "height": 231,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "760fbffd-65f6-44bc-a2c7-b69d23a22b5d",
+                        "x": 558,
+                        "y": 421,
+                        "width": 297,
+                        "height": 339,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "3cc67c10-a0a7-4918-abcd-9fed76d85ed7",
+                        "x": 264,
+                        "y": 288,
+                        "width": 235,
+                        "height": 141,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "5e645405-ea49-437e-a276-a360de84245a",
+                        "x": 638,
+                        "y": 84,
+                        "width": 270,
+                        "height": 249,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "72674c99-97bc-4013-88b3-58f2c2609241",
+                        "x": 282,
+                        "y": 82,
+                        "width": 251,
+                        "height": 156,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 189,
+                        "y": 42,
+                        "GUID": "82305add-3186-4377-84c1-3283a3c9af4c"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

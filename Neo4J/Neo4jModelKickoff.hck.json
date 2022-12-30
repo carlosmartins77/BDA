@@ -1,0 +1,1178 @@
+{
+    "modelName": "Utilizador",
+    "collections": [
+        {
+            "collectionName": "Logs",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "IdLog",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "25f0f25f-dba9-48d5-a634-30e8f53bfdee",
+                    "error": {}
+                },
+                {
+                    "name": "IdUtilizador",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "feb3d399-d71f-4221-8dfc-3bbe70abbadd",
+                    "error": {}
+                },
+                {
+                    "name": "Descricao",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "type": "string",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "1812dfa2-ab61-4def-9d94-eb9d82465bd3",
+                    "error": {}
+                },
+                {
+                    "name": "DataHorario",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "temporal",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "0b9927da-b5e5-4016-8cde-b0ab0b9a3f3d",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "1bc1888c-5dde-4494-b762-2e27740a1978"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "GUID": "f7054bad-269c-4d26-b74e-06dbdda2ae3f",
+            "bucketId": "1c5dda5c-653c-43bd-bfcf-e394ded76d1b"
+        },
+        {
+            "collectionName": "Utilizador",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "idUtilizador",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "bafd4996-d3cd-44a7-86a7-157c73ef86ee",
+                    "error": {}
+                },
+                {
+                    "name": "Nome",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "type": "string",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "9b966f24-a3ae-4b69-baaf-0ba7bd8a0f29",
+                    "error": {}
+                },
+                {
+                    "name": "Email",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "type": "string",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "96677842-e867-4b3a-9fd3-54e2fa537ef7",
+                    "error": {}
+                },
+                {
+                    "name": "Password",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "type": "string",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "ff8eb5b8-a035-4aee-9879-63af6a61573b",
+                    "error": {}
+                },
+                {
+                    "name": "DataNascimento",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "temporal",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "f6a93aa5-092d-43e9-96b8-7b179cb37009",
+                    "error": {}
+                },
+                {
+                    "name": "DataCriacao",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "temporal",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "a43b44bb-042c-4b6c-a42a-725dd72617ce",
+                    "error": {}
+                },
+                {
+                    "name": "Geolocalizacao",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "type": "string",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "4ea16aa8-d3c5-4b49-8de4-293eb0575ee6",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "5de783cb-9817-4826-9577-ae1f40c3a383"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "GUID": "01a99474-826f-4ecf-af34-b1a18a8b0e6a",
+            "bucketId": "1c5dda5c-653c-43bd-bfcf-e394ded76d1b"
+        },
+        {
+            "collectionName": "Equipa",
+            "type": "object",
+            "properties": [
+                {
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "fd3b5b19-8135-4b9f-8173-7c92bb542e99",
+                    "name": "IdEquipa",
+                    "error": {}
+                },
+                {
+                    "name": "NomeEquipa",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "type": "string",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "82710bb2-05fc-4ba0-b915-df18b9d9abcd",
+                    "error": {}
+                },
+                {
+                    "name": "DataCriacao",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "temporal",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "bd8ebb95-c38c-4593-a2ba-d2ba7844caa6",
+                    "error": {}
+                },
+                {
+                    "name": "IdUtilizadorCapitao",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "6c491e58-ead6-4a69-8964-ac6a7e32d4f3",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "e41fdf8e-0faa-4629-9253-bb0f5d516693"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "GUID": "62e4eb54-c037-47f2-bfa6-9d015d6cd52c",
+            "bucketId": "1c5dda5c-653c-43bd-bfcf-e394ded76d1b"
+        },
+        {
+            "collectionName": "Publicacoes",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "IdPublicacao",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "b1d622c5-4ef7-46c9-aff4-2db60eae58e8",
+                    "error": {}
+                },
+                {
+                    "name": "IdUtilizador",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "b6078cfe-4692-4ae5-a8fb-d58a01320211",
+                    "error": {}
+                },
+                {
+                    "name": "Conteudo",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "type": "string",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "d9d1efe5-23bf-41bb-ade6-709a83d57ac3",
+                    "error": {}
+                },
+                {
+                    "name": "DataHorario",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "temporal",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "c07c697d-fefe-4906-a0f8-5852c134b0c8",
+                    "error": {}
+                },
+                {
+                    "name": "Status",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "type": "string",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "a3324cd3-8e1e-4943-b516-5fdb3b375e74",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "5cac9c57-073e-4257-988e-c3b51217ee41"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "GUID": "d70dc8d9-361f-4706-a72a-bb16c8d969fe",
+            "bucketId": "1c5dda5c-653c-43bd-bfcf-e394ded76d1b"
+        },
+        {
+            "collectionName": "Amizades",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "IdUtilizador1",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "92fcb9ca-4b11-4736-be98-b656d0a6bc52",
+                    "error": {}
+                },
+                {
+                    "name": "IdUtilizador2",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "24f937ff-2121-4b18-99aa-87a2fb1235de",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "65eafee5-d12a-4000-80cb-3698effd378f"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "GUID": "d99b237e-3f4e-4c20-adba-f38264e514f7",
+            "bucketId": "1c5dda5c-653c-43bd-bfcf-e394ded76d1b"
+        },
+        {
+            "collectionName": "Jogos Futebol",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "IdJogoFutebol",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "8af4777e-07cf-483d-bef8-a32437e08118",
+                    "error": {}
+                },
+                {
+                    "name": "IdEquipa1",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "db79c26e-ecfe-4847-88a5-53431366fdd5",
+                    "error": {}
+                },
+                {
+                    "name": "IdEquipa2",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "6cc1db63-7ff5-41f4-89a3-aea31715f409",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "name": "IdEquipaVencedora",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "22772180-e626-4fdb-8001-748898197647",
+                    "error": {}
+                },
+                {
+                    "name": "GolosEquipa1",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "a3ea8065-2e11-4415-adf4-9763fc9d3a99",
+                    "error": {}
+                },
+                {
+                    "name": "GolosEquipa2",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "817cda70-2114-466e-8b43-ab445da10c2b",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    }
+                },
+                {
+                    "name": "HorarioJogo",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "temporal",
+                    "type": "string",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "052f5756-844a-40b1-9a5a-895d9a541bcb",
+                    "error": {}
+                },
+                {
+                    "name": "Localizacao",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "type": "string",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "f7e99ef4-3a8b-4596-8900-1365a05e6c16",
+                    "error": {}
+                },
+                {
+                    "name": "Status",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "type": "string",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "2babf8b0-08a8-4a00-9aa9-0348edd18fe8",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "ca59ae8c-fa37-450a-ae6c-77114360b6ac"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "GUID": "de168b71-bf36-4584-8787-d41c67bb67d6",
+            "bucketId": "1c5dda5c-653c-43bd-bfcf-e394ded76d1b"
+        },
+        {
+            "collectionName": "Elementos Equipa",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "IdEquipa",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "cdd2a01b-3727-4fd9-aa86-cf6b7e5aa44d",
+                    "error": {}
+                },
+                {
+                    "name": "IdUtilizador",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "ec9a3079-5cc6-4495-97cd-4c96b0cdbec6",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "063e1b48-51f4-4577-b261-0ab9236e18a3"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "GUID": "132ce376-26e9-4478-8ca5-e526c54ac8a2",
+            "bucketId": "1c5dda5c-653c-43bd-bfcf-e394ded76d1b"
+        }
+    ],
+    "buckets": [
+        {
+            "name": "Kickoff",
+            "type": "bucket",
+            "collectionIds": [
+                "f7054bad-269c-4d26-b74e-06dbdda2ae3f",
+                "01a99474-826f-4ecf-af34-b1a18a8b0e6a",
+                "62e4eb54-c037-47f2-bfa6-9d015d6cd52c",
+                "d70dc8d9-361f-4706-a72a-bb16c8d969fe",
+                "d99b237e-3f4e-4c20-adba-f38264e514f7",
+                "de168b71-bf36-4584-8787-d41c67bb67d6",
+                "132ce376-26e9-4478-8ca5-e526c54ac8a2"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "indexes": [],
+            "GUID": "1c5dda5c-653c-43bd-bfcf-e394ded76d1b"
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "Utilizador to Logs",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "01a99474-826f-4ecf-af34-b1a18a8b0e6a",
+            "childCollection": "f7054bad-269c-4d26-b74e-06dbdda2ae3f",
+            "level": "entity",
+            "GUID": "cc8c8209-bedc-448a-8e6a-a9cbd6ee044a",
+            "lineSize": 2,
+            "bucketId": "1c5dda5c-653c-43bd-bfcf-e394ded76d1b",
+            "properties": []
+        },
+        {
+            "name": "Utilizador to Equipa",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "01a99474-826f-4ecf-af34-b1a18a8b0e6a",
+            "childCollection": "62e4eb54-c037-47f2-bfa6-9d015d6cd52c",
+            "level": "entity",
+            "GUID": "9a3a42ae-fc11-4e65-834c-d506ade45610",
+            "lineSize": 2,
+            "bucketId": "1c5dda5c-653c-43bd-bfcf-e394ded76d1b",
+            "properties": []
+        },
+        {
+            "name": "Utilizador to Publicacoes",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "01a99474-826f-4ecf-af34-b1a18a8b0e6a",
+            "childCollection": "d70dc8d9-361f-4706-a72a-bb16c8d969fe",
+            "level": "entity",
+            "GUID": "5e18df35-7aa2-41c6-b143-7bfba42f8f70",
+            "lineSize": 2,
+            "bucketId": "1c5dda5c-653c-43bd-bfcf-e394ded76d1b",
+            "properties": []
+        },
+        {
+            "name": "Utilizador to Amizades",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "01a99474-826f-4ecf-af34-b1a18a8b0e6a",
+            "childCollection": "d99b237e-3f4e-4c20-adba-f38264e514f7",
+            "level": "entity",
+            "GUID": "843a9f97-2634-4996-b4e0-53f9718b157e",
+            "lineSize": 2,
+            "bucketId": "1c5dda5c-653c-43bd-bfcf-e394ded76d1b",
+            "properties": []
+        },
+        {
+            "name": "Utilizador to Elementos Equipa",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "01a99474-826f-4ecf-af34-b1a18a8b0e6a",
+            "childCollection": "",
+            "level": "entity",
+            "GUID": "8e5a433e-2e58-4cbc-bb96-ed53a8146871",
+            "lineSize": 2,
+            "bucketId": "1c5dda5c-653c-43bd-bfcf-e394ded76d1b",
+            "properties": []
+        },
+        {
+            "name": "Elementos Equipa to Equipa",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "",
+            "childCollection": "62e4eb54-c037-47f2-bfa6-9d015d6cd52c",
+            "level": "entity",
+            "GUID": "a7c8be69-8557-4b1e-b74e-17a24b977316",
+            "lineSize": 2,
+            "bucketId": "1c5dda5c-653c-43bd-bfcf-e394ded76d1b",
+            "properties": []
+        },
+        {
+            "name": "Equipa to Jogos Futebol",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "62e4eb54-c037-47f2-bfa6-9d015d6cd52c",
+            "childCollection": "de168b71-bf36-4584-8787-d41c67bb67d6",
+            "level": "entity",
+            "GUID": "35a2de93-8db1-48b1-b7bb-a289d74cb306",
+            "lineSize": 2,
+            "bucketId": "1c5dda5c-653c-43bd-bfcf-e394ded76d1b",
+            "properties": []
+        },
+        {
+            "name": "Equipa to Elementos Equipa",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "62e4eb54-c037-47f2-bfa6-9d015d6cd52c",
+            "childCollection": "132ce376-26e9-4478-8ca5-e526c54ac8a2",
+            "level": "entity",
+            "GUID": "855d23b8-08ee-46bf-9401-803fe366f87b",
+            "lineSize": 2,
+            "bucketId": "1c5dda5c-653c-43bd-bfcf-e394ded76d1b",
+            "properties": []
+        },
+        {
+            "name": "Utilizador to Elementos Equipa",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "01a99474-826f-4ecf-af34-b1a18a8b0e6a",
+            "childCollection": "132ce376-26e9-4478-8ca5-e526c54ac8a2",
+            "level": "entity",
+            "GUID": "b0be2eaf-9151-4bbc-8c2b-b376b3fda52b",
+            "lineSize": 2,
+            "bucketId": "1c5dda5c-653c-43bd-bfcf-e394ded76d1b",
+            "properties": [
+                {
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "140ac237-368d-43dd-9a69-f9736046bf9f",
+                    "name": "IdUtilizador1",
+                    "error": {}
+                }
+            ]
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "1c5dda5c-653c-43bd-bfcf-e394ded76d1b": "Kickoff",
+        "f7054bad-269c-4d26-b74e-06dbdda2ae3f": "Logs",
+        "25f0f25f-dba9-48d5-a634-30e8f53bfdee": "IdLog",
+        "feb3d399-d71f-4221-8dfc-3bbe70abbadd": "IdUtilizador",
+        "1812dfa2-ab61-4def-9d94-eb9d82465bd3": "Descricao",
+        "0b9927da-b5e5-4016-8cde-b0ab0b9a3f3d": "DataHorario",
+        "01a99474-826f-4ecf-af34-b1a18a8b0e6a": "Utilizador",
+        "62e4eb54-c037-47f2-bfa6-9d015d6cd52c": "Equipa",
+        "d70dc8d9-361f-4706-a72a-bb16c8d969fe": "Publicacoes",
+        "d99b237e-3f4e-4c20-adba-f38264e514f7": "Amizades",
+        "cc8c8209-bedc-448a-8e6a-a9cbd6ee044a": "Utilizador to Logs",
+        "9a3a42ae-fc11-4e65-834c-d506ade45610": "Utilizador to Equipa",
+        "5e18df35-7aa2-41c6-b143-7bfba42f8f70": "Utilizador to Publicacoes",
+        "843a9f97-2634-4996-b4e0-53f9718b157e": "Utilizador to Amizades",
+        "bafd4996-d3cd-44a7-86a7-157c73ef86ee": "idUtilizador",
+        "9b966f24-a3ae-4b69-baaf-0ba7bd8a0f29": "Nome",
+        "96677842-e867-4b3a-9fd3-54e2fa537ef7": "Email",
+        "ff8eb5b8-a035-4aee-9879-63af6a61573b": "Password",
+        "f6a93aa5-092d-43e9-96b8-7b179cb37009": "DataNascimento",
+        "a43b44bb-042c-4b6c-a42a-725dd72617ce": "DataCriacao",
+        "4ea16aa8-d3c5-4b49-8de4-293eb0575ee6": "Geolocalizacao",
+        "b1d622c5-4ef7-46c9-aff4-2db60eae58e8": "IdPublicacao",
+        "b6078cfe-4692-4ae5-a8fb-d58a01320211": "IdUtilizador",
+        "d9d1efe5-23bf-41bb-ade6-709a83d57ac3": "Conteudo",
+        "c07c697d-fefe-4906-a0f8-5852c134b0c8": "DataHorario",
+        "a3324cd3-8e1e-4943-b516-5fdb3b375e74": "Status",
+        "92fcb9ca-4b11-4736-be98-b656d0a6bc52": "IdUtilizador1",
+        "24f937ff-2121-4b18-99aa-87a2fb1235de": "IdUtilizador2",
+        "de168b71-bf36-4584-8787-d41c67bb67d6": "Jogos Futebol",
+        "8e5a433e-2e58-4cbc-bb96-ed53a8146871": "Utilizador to Elementos Equipa",
+        "a7c8be69-8557-4b1e-b74e-17a24b977316": "Elementos Equipa to Equipa",
+        "35a2de93-8db1-48b1-b7bb-a289d74cb306": "Equipa to Jogos Futebol",
+        "132ce376-26e9-4478-8ca5-e526c54ac8a2": "Elementos Equipa",
+        "855d23b8-08ee-46bf-9401-803fe366f87b": "Equipa to Elementos Equipa",
+        "b0be2eaf-9151-4bbc-8c2b-b376b3fda52b": "Utilizador to Elementos Equipa",
+        "cdd2a01b-3727-4fd9-aa86-cf6b7e5aa44d": "IdEquipa",
+        "ec9a3079-5cc6-4495-97cd-4c96b0cdbec6": "IdUtilizador",
+        "fd3b5b19-8135-4b9f-8173-7c92bb542e99": "IdEquipa",
+        "82710bb2-05fc-4ba0-b915-df18b9d9abcd": "NomeEquipa",
+        "bd8ebb95-c38c-4593-a2ba-d2ba7844caa6": "DataCriacao",
+        "6c491e58-ead6-4a69-8964-ac6a7e32d4f3": "IdUtilizadorCapitao",
+        "8af4777e-07cf-483d-bef8-a32437e08118": "IdJogoFutebol",
+        "6cc1db63-7ff5-41f4-89a3-aea31715f409": "IdEquipa2",
+        "db79c26e-ecfe-4847-88a5-53431366fdd5": "IdEquipa1",
+        "22772180-e626-4fdb-8001-748898197647": "IdEquipaVencedora",
+        "a3ea8065-2e11-4415-adf4-9763fc9d3a99": "GolosEquipa1",
+        "817cda70-2114-466e-8b43-ab445da10c2b": "GolosEquipa2",
+        "052f5756-844a-40b1-9a5a-895d9a541bcb": "HorarioJogo",
+        "f7e99ef4-3a8b-4596-8900-1365a05e6c16": "Localizacao",
+        "2babf8b0-08a8-4a00-9aa9-0348edd18fe8": "Status",
+        "140ac237-368d-43dd-9a69-f9736046bf9f": "IdUtilizador1"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "304eb9b1-ae17-4e14-b415-b493744325aa"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "8cb8e6b4-a2dc-47c5-a78a-baa1d81b95ea"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "baba181b-c090-497a-b020-40c07db6bb59"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "4.3",
+    "dbVendor": "Neo4j",
+    "appTarget": "NEO4J",
+    "creationTS": "2022-12-27T12:27:31.410Z",
+    "GUID": "a3b52e80-942c-4233-ba0f-27f996ea79aa",
+    "isLineageEnabled": false,
+    "lastModifTS": "2022-12-27T14:27:21.735Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginName": "Neo4j",
+        "pluginVersion": "0.1.44",
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.7.0"
+    },
+    "hackoladeMeta": {
+        "validationErrors": {
+            "modelName": false
+        }
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "f7054bad-269c-4d26-b74e-06dbdda2ae3f",
+                        "x": 80,
+                        "y": 80,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "01a99474-826f-4ecf-af34-b1a18a8b0e6a",
+                        "x": 196,
+                        "y": 177,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "62e4eb54-c037-47f2-bfa6-9d015d6cd52c",
+                        "x": 100,
+                        "y": 120,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "d70dc8d9-361f-4706-a72a-bb16c8d969fe",
+                        "x": 100.41218587054742,
+                        "y": 120,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "d99b237e-3f4e-4c20-adba-f38264e514f7",
+                        "x": 120.41218587054742,
+                        "y": 140,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "cc8c8209-bedc-448a-8e6a-a9cbd6ee044a",
+                        "x": 40,
+                        "y": 40,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "9a3a42ae-fc11-4e65-834c-d506ade45610",
+                        "x": 100,
+                        "y": 100,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "5e18df35-7aa2-41c6-b143-7bfba42f8f70",
+                        "x": 120,
+                        "y": 120,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "843a9f97-2634-4996-b4e0-53f9718b157e",
+                        "x": 60,
+                        "y": 60,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "de168b71-bf36-4584-8787-d41c67bb67d6",
+                        "x": 96.42533271189687,
+                        "y": 100,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "8e5a433e-2e58-4cbc-bb96-ed53a8146871",
+                        "x": 160,
+                        "y": 160,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "a7c8be69-8557-4b1e-b74e-17a24b977316",
+                        "x": 180,
+                        "y": 180,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "35a2de93-8db1-48b1-b7bb-a289d74cb306",
+                        "x": 140,
+                        "y": 140,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "132ce376-26e9-4478-8ca5-e526c54ac8a2",
+                        "x": 190.97336704398015,
+                        "y": 120,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "855d23b8-08ee-46bf-9401-803fe366f87b",
+                        "x": 200,
+                        "y": 200,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    },
+                    {
+                        "GUID": "b0be2eaf-9151-4bbc-8c2b-b376b3fda52b",
+                        "x": 220,
+                        "y": 220,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 40,
+                        "y": 40,
+                        "GUID": "1c5dda5c-653c-43bd-bfcf-e394ded76d1b"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [
+                        {
+                            "GUID": "f7054bad-269c-4d26-b74e-06dbdda2ae3f",
+                            "size": 100,
+                            "x": 246.84497189458187,
+                            "y": 325.70067663220794,
+                            "isPined": true
+                        },
+                        {
+                            "GUID": "01a99474-826f-4ecf-af34-b1a18a8b0e6a",
+                            "size": 100,
+                            "x": 528.7405289344767,
+                            "y": 102
+                        },
+                        {
+                            "GUID": "62e4eb54-c037-47f2-bfa6-9d015d6cd52c",
+                            "size": 100,
+                            "x": 847.7630533633354,
+                            "y": 270.46707928120765,
+                            "isPined": true
+                        },
+                        {
+                            "GUID": "d70dc8d9-361f-4706-a72a-bb16c8d969fe",
+                            "size": 100,
+                            "x": 889.2988415984606,
+                            "y": 111.35335428457306,
+                            "isPined": true
+                        },
+                        {
+                            "GUID": "d99b237e-3f4e-4c20-adba-f38264e514f7",
+                            "size": 100,
+                            "x": 167.97336704398015,
+                            "y": 117,
+                            "isPined": true
+                        },
+                        {
+                            "GUID": "de168b71-bf36-4584-8787-d41c67bb67d6",
+                            "size": 100,
+                            "x": 840.7431825863518,
+                            "y": 630.151003472288,
+                            "isPined": true
+                        },
+                        {
+                            "GUID": "132ce376-26e9-4478-8ca5-e526c54ac8a2",
+                            "size": 100,
+                            "x": 542.7331786293506,
+                            "y": 462.2012792830672,
+                            "isPined": true
+                        }
+                    ],
+                    "buckets": [
+                        {
+                            "x": 129.97336704398015,
+                            "y": 61.82065003769688,
+                            "GUID": "1c5dda5c-653c-43bd-bfcf-e394ded76d1b"
+                        }
+                    ],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 360
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": []
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

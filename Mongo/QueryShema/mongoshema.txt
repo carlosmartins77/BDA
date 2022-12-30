@@ -1,0 +1,247 @@
+use Kickoff;
+
+db.createCollection("Logs", {
+    "capped": false,
+    "validator": {
+        "$jsonSchema": {
+            "bsonType": "object",
+            "title": "Logs",
+            "properties": {
+                "_id": {
+                    "bsonType": "objectId"
+                },
+                "IdLog": {
+                    "bsonType": "objectId"
+                },
+                "IdUtilizador": {
+                    "bsonType": "objectId"
+                },
+                "Descricao": {
+                    "bsonType": "string"
+                },
+                "DataHorario": {
+                    "bsonType": "date"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "IdLog",
+                "IdUtilizador",
+                "Descricao",
+                "DataHorario"
+            ]
+        }
+    },
+    "validationLevel": "off",
+    "validationAction": "warn"
+});
+
+
+
+
+db.createCollection("Publicacoes", {
+    "capped": false,
+    "validator": {
+        "$jsonSchema": {
+            "bsonType": "object",
+            "title": "Publicacoes",
+            "properties": {
+                "_id": {
+                    "bsonType": "objectId"
+                },
+                "IdPublicacao": {
+                    "bsonType": "objectId"
+                },
+                "IdUtilizador": {
+                    "bsonType": "objectId"
+                },
+                "Conteudo": {
+                    "bsonType": "string"
+                },
+                "DataHorario": {
+                    "bsonType": "date"
+                },
+                "Status": {
+                    "bsonType": "string"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "IdPublicacao",
+                "IdUtilizador",
+                "Conteudo",
+                "DataHorario",
+                "Status"
+            ]
+        }
+    },
+    "validationLevel": "off",
+    "validationAction": "warn"
+});
+
+
+
+
+db.createCollection("Equipa", {
+    "capped": false,
+    "validator": {
+        "$jsonSchema": {
+            "bsonType": "object",
+            "title": "Equipa",
+            "properties": {
+                "_id": {
+                    "bsonType": "objectId"
+                },
+                "IdEquipa": {
+                    "bsonType": "objectId"
+                },
+                "NomeEquipa": {
+                    "bsonType": "string"
+                },
+                "DataCriacao": {
+                    "bsonType": "date"
+                },
+                "IdUtilizadorCapitao": {
+                    "bsonType": "objectId"
+                },
+                "ElementosEquipa": {
+                    "bsonType": "array",
+                    "additionalItems": true,
+                    "items": [
+                        {
+                            "bsonType": "objectId"
+                        },
+                        {
+                            "bsonType": "objectId"
+                        }
+                    ]
+                },
+                "JogosFutebol": {
+                    "bsonType": "array",
+                    "additionalItems": true,
+                    "items": {
+                        "bsonType": "object",
+                        "properties": {
+                            "IdJogoFutebol": {
+                                "bsonType": "objectId"
+                            },
+                            "IdEquipa2": {
+                                "bsonType": "string"
+                            },
+                            "IdEquipaVencedorar": {
+                                "bsonType": "objectId"
+                            },
+                            "GolosEquipa1": {
+                                "bsonType": "number"
+                            },
+                            "GolosEquipa2": {
+                                "bsonType": "number"
+                            },
+                            "HorarioJogo": {
+                                "bsonType": "date"
+                            },
+                            "Localizacao": {
+                                "bsonType": "string"
+                            },
+                            "Status": {
+                                "bsonType": "string"
+                            }
+                        },
+                        "additionalProperties": false
+                    }
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "IdEquipa",
+                "NomeEquipa",
+                "DataCriacao",
+                "IdUtilizadorCapitao",
+                "ElementosEquipa"
+            ]
+        }
+    },
+    "validationLevel": "off",
+    "validationAction": "warn"
+});
+
+
+
+
+db.createCollection("Amizades", {
+    "capped": false,
+    "validator": {
+        "$jsonSchema": {
+            "bsonType": "object",
+            "title": "Amizades",
+            "properties": {
+                "_id": {
+                    "bsonType": "objectId"
+                },
+                "IdUtilizador1": {
+                    "bsonType": "objectId"
+                },
+                "IdUtilizador2": {
+                    "bsonType": "objectId"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "IdUtilizador1",
+                "IdUtilizador2"
+            ]
+        }
+    },
+    "validationLevel": "off",
+    "validationAction": "warn"
+});
+
+
+
+
+db.createCollection("Utilizador", {
+    "capped": false,
+    "validator": {
+        "$jsonSchema": {
+            "bsonType": "object",
+            "title": "Utilizador",
+            "properties": {
+                "_id": {
+                    "bsonType": "objectId"
+                },
+                "IdUtilizador": {
+                    "bsonType": "objectId"
+                },
+                "Nome": {
+                    "bsonType": "string"
+                },
+                "Email": {
+                    "bsonType": "string"
+                },
+                "Password": {
+                    "bsonType": "string"
+                },
+                "DataNascimento": {
+                    "bsonType": "date"
+                },
+                "DataCriacao": {
+                    "bsonType": "date"
+                },
+                "Geolocalizacao": {
+                    "bsonType": "string"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "IdUtilizador",
+                "Nome",
+                "Email",
+                "Password",
+                "DataNascimento",
+                "DataCriacao"
+            ]
+        }
+    },
+    "validationLevel": "off",
+    "validationAction": "warn"
+});

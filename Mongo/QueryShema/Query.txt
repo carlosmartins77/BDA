@@ -1,0 +1,158 @@
+db.Logs.aggregate([
+    {
+        $lookup: {
+            from: "LogType",
+            localField: "IdLogTypeFK",
+            foreignField: "IdLogType",
+            as: "descricao"
+						}
+     },
+     {
+          $unwind: "$descricao"
+     },
+        {
+            $project: {
+            IdLog: "$IdLog",
+            IdUtilizadorFK: "$IdUtilizadorFK",
+            DataHorario:"$DataHorario",
+            Descricao: "$descricao.Descricao"
+         }
+      }
+])
+
+----
+
+
+
+db.Utilizador.aggregate([
+    {
+        $lookup: {
+            from: "Amizades",
+            localField: "IdUtilizador",
+            foreignField: "IdUtilizador1FK",
+            as: "amizades"
+        }
+    },
+    {
+        $unwind: "$amizades"
+    },
+    {
+        $group: {
+            _id: {
+                IdUtilizador: "$IdUtilizador",
+                Nome: "$Nome",
+                Password: "$Password",
+                Email: "$Email",
+                DataNascimento: "$DataNascimento",
+                DataCriacao: "$DataCriacao",
+                Geolocalizacao: "$Geolocalizacao"
+            },
+            amizades: {
+                $push: {
+                    amigo: "$amizades.IdUtilizador1FK"
+                }
+            }
+        }
+    },
+		{
+            $project: {
+								IdUtilizador: "$_id.IdUtilizador",
+								Nome: "$_id.Nome",
+								Password:"$_id.Password",
+								Email: "$_id.Email",
+								DataNascimento: "$_id.DataNascimento",
+								DataCriacao:"$_id.DataCriacao",
+								Geolocalizacao:"$_id.Geolocalizacao",
+								Amizades: "$amizades"
+         }
+      }
+]) 
+
+------
+
+
+
+db.Equipa.aggregate([
+    {
+        $lookup: {
+            from: "ElementosEquipa",
+            localField: "IdEquipa",
+            foreignField: "IdEquipaFK",
+            as: "elementos"
+        }
+    },
+    {
+        $unwind: "$elementos"
+    },
+    {
+        $group: {
+            _id: {
+                IdEquipa: "$IdEquipa",
+                NomeEquipa: "$NomeEquipa",
+                DataCriacao: "$DataCriacao",
+                IdUtilizadorCapitaoFK: "$IdUtilizadorCapitaoFK"
+            },
+            elementos: {
+                $push: {
+                    elemento: "$elementos.IdUtilizadorFK"
+                }
+            }
+        }
+    },
+    {
+        $project: {
+            IdEquipa: "$_id.IdEquipa",
+            NomeEquipa: "$_id.NomeEquipa",
+            DataCriacao: "$_id.DataCriacao",
+            IdUtilizadorCapitaoFK: "$_id.IdUtilizadorCapitaoFK",
+            Elementos: "$elementos"
+        }
+    }
+])
+
+-----
+
+db.Equipa.aggregate([
+    {
+        $lookup: {
+            from: "ElementosEquipa",
+            localField: "IdEquipa",
+            foreignField: "IdEquipaFK",
+            as: "elementos"
+        }
+    },
+    {
+        $unwind: "$elementos"
+    },
+		{
+        $lookup: {
+            from: "JogosFutebol",
+            localField: "IdEquipa",
+            foreignField: "IdEquipa1FK",
+            as: "jogos"
+        }
+    },
+    {
+        $unwind: "$jogos"
+    },
+    {
+        $group: {
+            _id: {
+                IdEquipa: "$IdEquipa",
+                NomeEquipa: "$NomeEquipa",
+                DataCriacao: "$DataCriacao",
+                IdUtilizadorCapitaoFK: "$IdUtilizadorCapitaoFK" 
+            },
+            elementos: {
+                $push: {
+                    elemento: "$elementos.IdUtilizadorFK"
+                }
+            },
+						jogos: {
+							$push: {
+                    jogo: "$jogos"
+                }
+						}
+        }
+    }
+])
