@@ -1,0 +1,75 @@
+2.    Listagem de jogos em que um conjunto de utilizadores participou
+
+db.Equipa.find(
+   { elementosEquipa: { $elemMatch: { $in: [1411, 1212, 1, 223]} } }
+)
+
+
+3.    Listagem dos jogos com o respetivo nome das equipas e o nome dos respetivos capitães
+
+db.Equipa.aggregate([
+    {
+        $lookup: {
+            from: "Utilizador",
+            localField: "IdUtilizadorCapitaoFK",
+            foreignField: "IdUtilizador",
+            as: "Utilizador"
+						}
+     },
+     {
+          $unwind: "$Utilizador"
+     },
+        {
+            $project: {
+            IdEquipa: "$IdEquipa",
+            NomeEquipa: "$NomeEquipa",
+            IdUtilizadorCapitao:"$Utilizador.Nome"
+         }
+      }
+]) -- 90.160s
+
+4.    Listagem do número de golos que cada equipa marcou
+
+db.Equipa.aggregate([
+    {
+        $project: {
+            IdEquipa: "$IdEquipa",
+            NomeEquipa: "$NomeEquipa",
+            Golos: {
+                $sum:  "$jogosFutebol.GolosEquipa1" 
+								}
+        }
+    }
+])
+
+1.   Listar a equipa vencedora dos jogos terminados
+
+db.Equipa.aggregate([
+    {
+        $project: 
+        {
+            IdEquipa: "$IdEquipa",
+            NomeEquipa: "$NomeEquipa",
+            EquipaVencedora: 
+            {
+                $switch: {
+                    branches: [
+                        {
+                            case: "$jogosFutebol.GolosEquipa1" > "$jogosFutebol.GolosEquipa2",
+                            then: "$IdEquipa1"
+                        },
+                        {
+                            case: "$jogosFutebol.GolosEquipa1" < "$jogosFutebol.GolosEquipa2",
+                            then: "$jogosFutebol.IdEquipa2"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+]);
+
+
+5.    Inserção de um conjunto de jogos terminados
+-- excel
+6.    Atualização da equipa vencedora dos jogos terminados

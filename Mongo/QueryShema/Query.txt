@@ -17,9 +17,9 @@ db.Logs.aggregate([
             DataHorario:"$DataHorario",
             Descricao: "$descricao.Descricao"
          }
-      }
+      },
+			{ $out: { db: "KickoffSQLSmall", coll: "Logs2" } }
 ])
-
 ----
 
 

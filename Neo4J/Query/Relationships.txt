@@ -1,0 +1,40 @@
+-- Publicacao
+MATCH
+  (a:Utilizador),
+  (b:Publicacoes)
+WHERE a.IdUtilizador = b.IdUtilizadorFK
+CREATE (a)-[p:Published]->(b)
+
+-- Logs
+MATCH
+  (a:Logs),
+  (b:LogType)
+WHERE a.IdLogTypeFK = b.IdLogType
+CREATE (a)-[l:log_Type]->(b)
+
+-- Equipa
+
+MATCH
+  (a:Utilizador),
+  (b:Equipa)
+WHERE a.IdUtilizador = b.IdUtilizadorCapitaoFK
+CREATE (a)-[t:Team_Leader]->(b)
+
+--- Jogo Futebol
+
+MATCH
+  (a:JogoFutebol),
+  (b:Equipa)
+WHERE a.IdEquipa1FK = b.IdEquipa
+CREATE (b)-[g:Game]->(a)
+
+MATCH
+  (a:JogoFutebol),
+  (b:Equipa)
+WHERE a.IdEquipa2FK = b.IdEquipa
+CREATE (b)-[g:Game]->(a)
+
+---
+
+
+match(n:Utilizador{IdUtilizador:3523})-[:Published]-(m:Publicacoes) RETURN m.Conteudo;
