@@ -9,17 +9,17 @@
                     "name": "IdLog",
                     "hackoladeMeta": {},
                     "isActivated": true,
-                    "type": "objectId",
-                    "GUID": "1cf44d15-5f61-4c93-9eed-30eb2928885f",
+                    "type": "numeric",
                     "primaryKey": true,
                     "required": true,
+                    "GUID": "1cf44d15-5f61-4c93-9eed-30eb2928885f",
                     "error": {}
                 },
                 {
-                    "name": "IdUtilizador",
+                    "name": "IdUtilizadorFK",
                     "hackoladeMeta": {},
                     "isActivated": true,
-                    "type": "objectId",
+                    "type": "numeric",
                     "required": true,
                     "GUID": "46fed0e7-ff26-4900-9b6b-73cf2129be8c",
                     "error": {}
@@ -72,17 +72,17 @@
                     "name": "IdPublicacao",
                     "hackoladeMeta": {},
                     "isActivated": true,
-                    "type": "objectId",
+                    "type": "numeric",
                     "primaryKey": true,
-                    "GUID": "09fc6dd3-5274-4ee0-b6ac-383e55630a59",
                     "required": true,
+                    "GUID": "09fc6dd3-5274-4ee0-b6ac-383e55630a59",
                     "error": {}
                 },
                 {
-                    "name": "IdUtilizador",
+                    "name": "IdUtilizadorFK",
                     "hackoladeMeta": {},
                     "isActivated": true,
-                    "type": "objectId",
+                    "type": "numeric",
                     "required": true,
                     "GUID": "58d9a1a5-da61-4f5b-afa0-ea351362eb3d",
                     "error": {}
@@ -144,7 +144,7 @@
                     "name": "IdEquipa",
                     "hackoladeMeta": {},
                     "isActivated": true,
-                    "type": "objectId",
+                    "type": "numeric",
                     "primaryKey": true,
                     "required": true,
                     "GUID": "2df6d11a-b9d4-4949-8b0b-0dcf7c786633",
@@ -170,10 +170,10 @@
                     "error": {}
                 },
                 {
-                    "name": "IdUtilizadorCapitao",
+                    "name": "IdUtilizadorCapitaoFK",
                     "hackoladeMeta": {},
                     "isActivated": true,
-                    "type": "objectId",
+                    "type": "numeric",
                     "required": true,
                     "GUID": "c5c37d67-9cc1-47af-b8d4-5ea329de7cbf",
                     "error": {}
@@ -187,22 +187,22 @@
                         {
                             "hackoladeMeta": {},
                             "isActivated": true,
-                            "type": "objectId",
+                            "type": "numeric",
                             "GUID": "e77db573-128f-4618-bdcf-3e131d9c2c81",
                             "arrayItem": true,
                             "arrayParentType": "array",
-                            "displayName": "IdUtilizador1",
-                            "error": {}
+                            "error": {},
+                            "displayName": "IdUtilizador1"
                         },
                         {
                             "hackoladeMeta": {},
                             "isActivated": true,
-                            "type": "objectId",
+                            "type": "numeric",
                             "GUID": "c59a3dc0-8b10-4351-a42f-14eafbe0d921",
                             "arrayItem": true,
                             "arrayParentType": "array",
-                            "displayName": "IdUtilizador2",
-                            "error": {}
+                            "error": {},
+                            "displayName": "IdUtilizador2"
                         }
                     ],
                     "additionalItems": true,
@@ -224,7 +224,7 @@
                                     "name": "IdJogoFutebol",
                                     "hackoladeMeta": {},
                                     "isActivated": true,
-                                    "type": "objectId",
+                                    "type": "numeric",
                                     "GUID": "b8fc1777-2549-4f12-9db0-f22ed3e0fb23",
                                     "error": {}
                                 },
@@ -232,7 +232,7 @@
                                     "name": "IdEquipa2",
                                     "hackoladeMeta": {},
                                     "isActivated": true,
-                                    "type": "string",
+                                    "type": "numeric",
                                     "GUID": "3ce0f91c-fe5a-49ae-992b-a2a684241ddc",
                                     "error": {}
                                 },
@@ -240,7 +240,7 @@
                                     "name": "IdEquipaVencedorar",
                                     "hackoladeMeta": {},
                                     "isActivated": true,
-                                    "type": "objectId",
+                                    "type": "numeric",
                                     "GUID": "a2970566-5072-4401-ae25-4f0221d4376c",
                                     "error": {}
                                 },
@@ -331,10 +331,10 @@
                     "name": "IdUtilizador",
                     "hackoladeMeta": {},
                     "isActivated": true,
-                    "type": "objectId",
-                    "GUID": "c51242bd-d6bf-4a05-92b5-47a7ac3e67f2",
-                    "required": true,
+                    "type": "numeric",
                     "primaryKey": true,
+                    "required": true,
+                    "GUID": "c51242bd-d6bf-4a05-92b5-47a7ac3e67f2",
                     "error": {}
                 },
                 {
@@ -401,18 +401,21 @@
                         {
                             "hackoladeMeta": {},
                             "isActivated": true,
-                            "type": "objectId",
+                            "type": "numeric",
                             "GUID": "eff46df8-46e1-40ee-ab24-6e089989cba1",
                             "arrayItem": true,
-                            "arrayParentType": "array"
+                            "arrayParentType": "array",
+                            "displayName": "Amigo1",
+                            "error": {}
                         },
                         {
                             "hackoladeMeta": {},
                             "isActivated": true,
-                            "type": "objectId",
+                            "type": "numeric",
                             "GUID": "bd317d06-b504-48c8-bbf5-cae092f70031",
                             "arrayItem": true,
                             "arrayParentType": "array",
+                            "displayName": "Amigo2",
                             "error": {}
                         }
                     ],
@@ -471,11 +474,11 @@
         "864f51d5-733f-41fd-aedb-c6bdc8c15f32": "Kickoff",
         "72c9dba1-11e1-4982-8c1e-47629b47ab60": "Logs",
         "1cf44d15-5f61-4c93-9eed-30eb2928885f": "IdLog",
-        "46fed0e7-ff26-4900-9b6b-73cf2129be8c": "IdUtilizador",
+        "46fed0e7-ff26-4900-9b6b-73cf2129be8c": "IdUtilizadorFK",
         "41929a98-6296-4b55-9618-4f187de4b979": "DataHorario",
         "4bba356d-073b-4ca6-9382-5ed5979fa3a8": "Publicacoes",
         "09fc6dd3-5274-4ee0-b6ac-383e55630a59": "IdPublicacao",
-        "58d9a1a5-da61-4f5b-afa0-ea351362eb3d": "IdUtilizador",
+        "58d9a1a5-da61-4f5b-afa0-ea351362eb3d": "IdUtilizadorFK",
         "f72a32be-54e3-485a-9b4b-ad38b828d6d9": "Conteudo",
         "fc5e4bf0-149a-4f23-9a96-9cd6e0a1fa77": "DataHorario",
         "56c1c08c-92cb-4d8a-8b0a-fd191c844b1c": "Status",
@@ -483,7 +486,7 @@
         "2df6d11a-b9d4-4949-8b0b-0dcf7c786633": "IdEquipa",
         "2dbab785-cc48-4a93-a0e0-4b7644700fe9": "NomeEquipa",
         "0f1b0335-7b02-4032-a5d7-a2d0d0c09ba6": "DataCriacao",
-        "c5c37d67-9cc1-47af-b8d4-5ea329de7cbf": "IdUtilizadorCapitao",
+        "c5c37d67-9cc1-47af-b8d4-5ea329de7cbf": "IdUtilizadorCapitaoFK",
         "2dcad886-4fae-45fc-bf33-5bbd38a39627": "ElementosEquipa",
         "22c2964c-5055-4488-8879-3f8cee56d385": "JogosFutebol",
         "df52931f-bdab-4fe8-bd31-0c18ef81a9b7": "Utilizador",
@@ -526,14 +529,14 @@
     "creationTS": "2022-12-26T21:02:32.838Z",
     "GUID": "d9b9133e-bc00-44a9-9670-e21c904ceeeb",
     "isLineageEnabled": false,
-    "lastModifTS": "2022-12-28T15:49:19.722Z",
+    "lastModifTS": "2023-01-01T14:38:42.745Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "6.8.0"
+        "version": "6.7.0"
     },
     "hackoladeMeta": {
         "validationErrors": {
@@ -549,7 +552,7 @@
                         "GUID": "72c9dba1-11e1-4982-8c1e-47629b47ab60",
                         "x": 747,
                         "y": 307,
-                        "width": 222,
+                        "width": 231,
                         "height": 105,
                         "color": {}
                     },
@@ -557,7 +560,7 @@
                         "GUID": "4bba356d-073b-4ca6-9382-5ed5979fa3a8",
                         "x": 745,
                         "y": 112,
-                        "width": 223,
+                        "width": 231,
                         "height": 123,
                         "color": {}
                     },
@@ -615,12 +618,7 @@
             "changed": false
         },
         "dtDiagram": {
-            "collapsedNodes": [
-                [
-                    "8d05b037-e93f-4b1f-be43-0c09034b7601",
-                    "2dcad886-4fae-45fc-bf33-5bbd38a39627"
-                ]
-            ],
+            "collapsedNodes": [],
             "shouldDistributeCollections": false
         }
     }
