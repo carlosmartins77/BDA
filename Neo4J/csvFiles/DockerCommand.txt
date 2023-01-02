@@ -1,3 +1,7 @@
+docker exec -ti 4530b093f4fe bash
+--
+docker cp OneDrive\Desktop\csvFiles\SmallerData\Utilizador.csv 4530b093f4fe:/var/lib/neo4j/import
+
 
 --- LOAD AMIZADES
 :auto LOAD CSV WITH HEADERS from "file:///Amizades.csv" AS line
