@@ -1,0 +1,15 @@
+Jogos terminados de certos utilizadores
+match (u:Utilizador{IdUtilizador: 19250})-[:Team_Leader]-(e:Equipa)-[:Game]-(j:JogoFutebol) return j
+
+-- Obter jogos, nome do capitao de cada equipa, nome das Equipa
+match (u:Utilizador)-[:Team_Leader]-(e:Equipa)-[:Game]-(j:JogoFutebol) return *
+Exemplo: Utilizador com 2 Equipas
+match (u:Utilizador{IdUtilizador: 9})-[:Team_Leader]-(e:Equipa)-[:Game]-(j:JogoFutebol) return *
+
+-- Golos totais por equipa
+match (e:Equipa)-[:Game]-(j:JogoFutebol{Status: "Finished"}) where e.IdEquipa = j.IdEquipa1FK return  e.NomeEquipa, SUM(j.GolosEquipa1)
+match (e:Equipa)-[:Game]-(j:JogoFutebol{Status: "Finished"}) where e.IdEquipa = j.IdEquipa2FK return   e.NomeEquipa, SUM(j.GolosEquipa2)
+
+-- Contar quantos amigos tem cada Utilizador e mostrar o nome em vez do id
+select u.Nome, count(a.IdUtilizador2FK) from Utilizador u, Amizades a where u.IdUtilizador = a.IdUtilizador1FK and u.Nome = 'Xue Xiaoming' group by u.Nome
+match (u:Utilizador)-[:Friend]-(a:Amizade) where u.IdUtilizador = a.IdUtilizador1FK return  u.Nome, count(a)
