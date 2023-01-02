@@ -1,5 +1,62 @@
+
+--- LOAD AMIZADES
 :auto LOAD CSV WITH HEADERS from "file:///Amizades.csv" AS line
 CALL {
     with line
-    CREATE (amizade:Amizade {IdUtilizador1FK: toInteger(line.IdUtilizador1FK), IdUtilizador2FK: toInteger(line.IdUtilizador2FK)})
-} IN TRANSACTIONS OF 1000 ROWS
+    CREATE (:Amizade {IdUtilizador1FK: toInteger(line.IdUtilizador1FK), IdUtilizador2FK: toInteger(line.IdUtilizador2FK)})
+} IN TRANSACTIONS OF 5000 ROWS
+
+--- LOAD elementos equipa
+:auto LOAD CSV WITH HEADERS from "file:///ElementosEquipa.csv" AS line
+CALL {
+    with line
+    CREATE (:ElementosEquipa {IdEquipaFK: toInteger(line.IdEquipaFK), IdUtilizadorFK : toInteger(line.IdUtilizadorFK)})
+} IN TRANSACTIONS OF 5000 ROWS
+
+--- LOAD logType
+:auto LOAD CSV WITH HEADERS from "file:///LogType.csv" AS line
+CALL {
+    with line
+    CREATE (:LogType {IdLogType: toInteger(line.IdLogType), Descricao: line.Descricao})
+} IN TRANSACTIONS OF 5000 ROWS
+
+--- Load Logs
+:auto LOAD CSV WITH HEADERS from "file:///Logs.csv" AS line
+CALL {
+    with line
+    CREATE (:Logs {IdLog: toInteger(line.IdLog), IdLogTypeFK: toInteger(line.IdLogTypeFK), IdUtilizadorFK: toInteger(line.IdUtilizadorFK), DataHorario: line.DataHorario})
+} IN TRANSACTIONS OF 5000 ROWS
+
+-- Load Publicacoes
+:auto LOAD CSV WITH HEADERS from "file:///Publicacoes.csv" AS line
+CALL {
+    with line
+    CREATE (:Publicacoes {IdPublicacao: toInteger(line.IdUtilizador), IdUtilizadorFK: toInteger(line.IdUtilizadorFK), Conteudo: line.Conteudo, DataHorario: line.DataHorario, Status: line.Status})
+} IN TRANSACTIONS OF 5000 ROWS
+
+-- Load Utilizador
+:auto LOAD CSV WITH HEADERS from "file:///Utilizador.csv" AS line
+CALL {
+    with line
+    CREATE (:Utilizador {IdUtilizador: toInteger(line.IdUtilizador), Nome: line.Nome, Password: line.Password, Email: line.Email, DataNascimento: line.DataNascimento, DataCriacao: line.DataCriacao, Geolocalizacao: line.Geolocalizacao})
+} IN TRANSACTIONS OF 5000 ROWS
+
+-- Equipa
+:auto LOAD CSV WITH HEADERS from "file:///Equipa.csv" AS line
+CALL {
+    with line
+    CREATE (:Equipa {IdEquipa: toInteger(line.IdEquipa), NomeEquipa: line.NomeEquipa, DataCriacao: line.IdUtilizadorFK, IdUtilizadorCapitaoFK: toInteger(line.IdUtilizadorCapitaoFK)})
+} IN TRANSACTIONS OF 5000 ROWS
+
+-- Load JogoFutebol
+:auto LOAD CSV WITH HEADERS from "file:///JogoFutebol.csv" AS line
+CALL {
+    with line
+    CREATE (:JogoFutebol {IdJogoFutebol: toInteger(line.IdJogoFutebol), IdEquipa1FK:  toInteger(line.IdEquipa1FK), IdEquipa2FK:  toInteger(line.IdEquipa2FK), IdEquipaVencedoraFK: toInteger(line.IdUtilizadorCapitaoFK), GolosEquipa1: toInteger(line.GolosEquipa1), GolosEquipa2: toInteger(line.GolosEquipa2), HorarioJogo: line.HorarioJogo, Localizacao: line.Localizacao, Status : line.Status})
+} IN TRANSACTIONS OF 5000 ROWS
+
+-- DELETE NODES
+:auto MATCH (n:Amizade)
+CALL { WITH n
+DETACH DELETE n
+} IN TRANSACTIONS OF 10000 ROWS;

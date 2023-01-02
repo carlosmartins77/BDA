@@ -10,7 +10,14 @@ MATCH
   (a:Logs),
   (b:LogType)
 WHERE a.IdLogTypeFK = b.IdLogType
-CREATE (a)-[l:log_Type]->(b)
+CREATE (a)-[l:Log_Type]->(b)
+
+
+MATCH
+  (a:Logs),
+  (b:Utilizador)
+WHERE a.IdUtilizadorFK = b.IdUtilizador
+CREATE (b)-[ls:Logs]->(a)
 
 -- Equipa
 
@@ -34,7 +41,31 @@ MATCH
 WHERE a.IdEquipa2FK = b.IdEquipa
 CREATE (b)-[g:Game]->(a)
 
----
+--- Amizade
+MATCH
+  (a:Utilizador),
+  (b:Amizade)
+WHERE a.IdUtilizador = b.IdUtilizador1FK
+CREATE (a)-[f:Friend]->(b)
 
+MATCH
+  (a:Utilizador),
+  (b:Amizade)
+WHERE a.IdUtilizador = b.IdUtilizador2FK
+CREATE (a)-[f:Friend]->(b)
 
+--- ElementosEquipa 
+MATCH
+  (a:Utilizador),
+  (b:ElementosEquipa)
+WHERE a.IdUtilizador = b.IdUtilizadorFK
+CREATE (a)-[el:Element_Of_Team]->(b)
+
+MATCH
+  (a:ElementosEquipa),
+  (b:Equipa)
+WHERE a.IdEquipaFK = b.IdEquipa
+CREATE (b)-[te:Team_Element]->(a)
+
+-- Return data
 match(n:Utilizador{IdUtilizador:3523})-[:Published]-(m:Publicacoes) RETURN m.Conteudo;

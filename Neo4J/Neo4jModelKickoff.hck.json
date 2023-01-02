@@ -40,12 +40,15 @@
                     "error": {}
                 },
                 {
-                    "name": "Descricao",
+                    "name": "IdLogTypeFK",
                     "hackoladeMeta": {},
                     "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
                     "primaryKey": false,
                     "unique": false,
-                    "type": "string",
+                    "childType": "number",
+                    "type": "numeric",
                     "compositeKey": [
                         "compositeNodeKey"
                     ],
@@ -637,6 +640,53 @@
             "collectionUsers": [],
             "GUID": "132ce376-26e9-4478-8ca5-e526c54ac8a2",
             "bucketId": "1c5dda5c-653c-43bd-bfcf-e394ded76d1b"
+        },
+        {
+            "collectionName": "LogType",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "IdLogType",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "exclusiveMinimum": false,
+                    "exclusiveMaximum": false,
+                    "primaryKey": false,
+                    "unique": false,
+                    "childType": "number",
+                    "type": "numeric",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "b23b13bc-2119-4b1c-89aa-00a9950606f3",
+                    "error": {}
+                },
+                {
+                    "name": "Descricao",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "unique": false,
+                    "type": "string",
+                    "compositeKey": [
+                        "compositeNodeKey"
+                    ],
+                    "compositeNodeKey": false,
+                    "GUID": "a810e451-28bf-492f-982c-5b1a34b3e5cf",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "4544483f-3e9a-4a40-ae90-50e5e9b67145"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "collectionUsers": [],
+            "GUID": "9572fae9-b08a-489d-b2f3-85a814263275",
+            "bucketId": "1c5dda5c-653c-43bd-bfcf-e394ded76d1b"
         }
     ],
     "buckets": [
@@ -650,7 +700,8 @@
                 "d70dc8d9-361f-4706-a72a-bb16c8d969fe",
                 "d99b237e-3f4e-4c20-adba-f38264e514f7",
                 "de168b71-bf36-4584-8787-d41c67bb67d6",
-                "132ce376-26e9-4478-8ca5-e526c54ac8a2"
+                "132ce376-26e9-4478-8ca5-e526c54ac8a2",
+                "9572fae9-b08a-489d-b2f3-85a814263275"
             ],
             "backgroundColor": {
                 "r": 216,
@@ -667,7 +718,7 @@
     "views": [],
     "relationships": [
         {
-            "name": "Utilizador to Logs",
+            "name": "Logs",
             "relationshipType": "",
             "parentField": [],
             "parentCardinality": "1",
@@ -682,7 +733,7 @@
             "properties": []
         },
         {
-            "name": "Utilizador to Equipa",
+            "name": "Team_Leader",
             "relationshipType": "",
             "parentField": [],
             "parentCardinality": "1",
@@ -697,7 +748,7 @@
             "properties": []
         },
         {
-            "name": "Utilizador to Publicacoes",
+            "name": "Published",
             "relationshipType": "",
             "parentField": [],
             "parentCardinality": "1",
@@ -712,7 +763,7 @@
             "properties": []
         },
         {
-            "name": "Utilizador to Amizades",
+            "name": "Friend",
             "relationshipType": "",
             "parentField": [],
             "parentCardinality": "1",
@@ -727,37 +778,7 @@
             "properties": []
         },
         {
-            "name": "Utilizador to Elementos Equipa",
-            "relationshipType": "",
-            "parentField": [],
-            "parentCardinality": "1",
-            "childField": [],
-            "childCardinality": "1",
-            "parentCollection": "01a99474-826f-4ecf-af34-b1a18a8b0e6a",
-            "childCollection": "",
-            "level": "entity",
-            "GUID": "8e5a433e-2e58-4cbc-bb96-ed53a8146871",
-            "lineSize": 2,
-            "bucketId": "1c5dda5c-653c-43bd-bfcf-e394ded76d1b",
-            "properties": []
-        },
-        {
-            "name": "Elementos Equipa to Equipa",
-            "relationshipType": "",
-            "parentField": [],
-            "parentCardinality": "1",
-            "childField": [],
-            "childCardinality": "1",
-            "parentCollection": "",
-            "childCollection": "62e4eb54-c037-47f2-bfa6-9d015d6cd52c",
-            "level": "entity",
-            "GUID": "a7c8be69-8557-4b1e-b74e-17a24b977316",
-            "lineSize": 2,
-            "bucketId": "1c5dda5c-653c-43bd-bfcf-e394ded76d1b",
-            "properties": []
-        },
-        {
-            "name": "Equipa to Jogos Futebol",
+            "name": "Game",
             "relationshipType": "",
             "parentField": [],
             "parentCardinality": "1",
@@ -772,7 +793,7 @@
             "properties": []
         },
         {
-            "name": "Equipa to Elementos Equipa",
+            "name": "Team_Element",
             "relationshipType": "",
             "parentField": [],
             "parentCardinality": "1",
@@ -787,7 +808,7 @@
             "properties": []
         },
         {
-            "name": "Utilizador to Elementos Equipa",
+            "name": "Team_Of_Element",
             "relationshipType": "",
             "parentField": [],
             "parentCardinality": "1",
@@ -818,6 +839,21 @@
                     "error": {}
                 }
             ]
+        },
+        {
+            "name": "Log_Type",
+            "relationshipType": "",
+            "parentField": [],
+            "parentCardinality": "1",
+            "childField": [],
+            "childCardinality": "1",
+            "parentCollection": "f7054bad-269c-4d26-b74e-06dbdda2ae3f",
+            "childCollection": "9572fae9-b08a-489d-b2f3-85a814263275",
+            "level": "entity",
+            "GUID": "aba62b2b-054b-46d4-b617-7ec4ac685599",
+            "lineSize": 2,
+            "bucketId": "1c5dda5c-653c-43bd-bfcf-e394ded76d1b",
+            "properties": []
         }
     ],
     "users": [],
@@ -827,16 +863,16 @@
         "f7054bad-269c-4d26-b74e-06dbdda2ae3f": "Logs",
         "25f0f25f-dba9-48d5-a634-30e8f53bfdee": "IdLog",
         "feb3d399-d71f-4221-8dfc-3bbe70abbadd": "IdUtilizador",
-        "1812dfa2-ab61-4def-9d94-eb9d82465bd3": "Descricao",
+        "1812dfa2-ab61-4def-9d94-eb9d82465bd3": "IdLogTypeFK",
         "0b9927da-b5e5-4016-8cde-b0ab0b9a3f3d": "DataHorario",
         "01a99474-826f-4ecf-af34-b1a18a8b0e6a": "Utilizador",
         "62e4eb54-c037-47f2-bfa6-9d015d6cd52c": "Equipa",
         "d70dc8d9-361f-4706-a72a-bb16c8d969fe": "Publicacoes",
         "d99b237e-3f4e-4c20-adba-f38264e514f7": "Amizades",
-        "cc8c8209-bedc-448a-8e6a-a9cbd6ee044a": "Utilizador to Logs",
-        "9a3a42ae-fc11-4e65-834c-d506ade45610": "Utilizador to Equipa",
-        "5e18df35-7aa2-41c6-b143-7bfba42f8f70": "Utilizador to Publicacoes",
-        "843a9f97-2634-4996-b4e0-53f9718b157e": "Utilizador to Amizades",
+        "cc8c8209-bedc-448a-8e6a-a9cbd6ee044a": "Logs",
+        "9a3a42ae-fc11-4e65-834c-d506ade45610": "Team_Leader",
+        "5e18df35-7aa2-41c6-b143-7bfba42f8f70": "Published",
+        "843a9f97-2634-4996-b4e0-53f9718b157e": "Friend",
         "bafd4996-d3cd-44a7-86a7-157c73ef86ee": "idUtilizador",
         "9b966f24-a3ae-4b69-baaf-0ba7bd8a0f29": "Nome",
         "96677842-e867-4b3a-9fd3-54e2fa537ef7": "Email",
@@ -852,12 +888,10 @@
         "92fcb9ca-4b11-4736-be98-b656d0a6bc52": "IdUtilizador1",
         "24f937ff-2121-4b18-99aa-87a2fb1235de": "IdUtilizador2",
         "de168b71-bf36-4584-8787-d41c67bb67d6": "Jogos Futebol",
-        "8e5a433e-2e58-4cbc-bb96-ed53a8146871": "Utilizador to Elementos Equipa",
-        "a7c8be69-8557-4b1e-b74e-17a24b977316": "Elementos Equipa to Equipa",
-        "35a2de93-8db1-48b1-b7bb-a289d74cb306": "Equipa to Jogos Futebol",
+        "35a2de93-8db1-48b1-b7bb-a289d74cb306": "Game",
         "132ce376-26e9-4478-8ca5-e526c54ac8a2": "Elementos Equipa",
-        "855d23b8-08ee-46bf-9401-803fe366f87b": "Equipa to Elementos Equipa",
-        "b0be2eaf-9151-4bbc-8c2b-b376b3fda52b": "Utilizador to Elementos Equipa",
+        "855d23b8-08ee-46bf-9401-803fe366f87b": "Team_Element",
+        "b0be2eaf-9151-4bbc-8c2b-b376b3fda52b": "Team_Of_Element",
         "cdd2a01b-3727-4fd9-aa86-cf6b7e5aa44d": "IdEquipa",
         "ec9a3079-5cc6-4495-97cd-4c96b0cdbec6": "IdUtilizador",
         "fd3b5b19-8135-4b9f-8173-7c92bb542e99": "IdEquipa",
@@ -873,7 +907,11 @@
         "052f5756-844a-40b1-9a5a-895d9a541bcb": "HorarioJogo",
         "f7e99ef4-3a8b-4596-8900-1365a05e6c16": "Localizacao",
         "2babf8b0-08a8-4a00-9aa9-0348edd18fe8": "Status",
-        "140ac237-368d-43dd-9a69-f9736046bf9f": "IdUtilizador1"
+        "140ac237-368d-43dd-9a69-f9736046bf9f": "IdUtilizador1",
+        "9572fae9-b08a-489d-b2f3-85a814263275": "LogType",
+        "aba62b2b-054b-46d4-b617-7ec4ac685599": "Log_Type",
+        "b23b13bc-2119-4b1c-89aa-00a9950606f3": "IdLogType",
+        "a810e451-28bf-492f-982c-5b1a34b3e5cf": "Descricao"
     },
     "definitions": {
         "type": "definitions",
@@ -898,7 +936,7 @@
     "creationTS": "2022-12-27T12:27:31.410Z",
     "GUID": "a3b52e80-942c-4233-ba0f-27f996ea79aa",
     "isLineageEnabled": false,
-    "lastModifTS": "2022-12-27T14:27:21.735Z",
+    "lastModifTS": "2023-01-02T14:41:31.421Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -907,7 +945,7 @@
         "pluginEngineVersion": "1.0.0"
     },
     "applicationInformation": {
-        "version": "6.7.0"
+        "version": "6.8.0"
     },
     "hackoladeMeta": {
         "validationErrors": {
@@ -1019,26 +1057,6 @@
                         }
                     },
                     {
-                        "GUID": "8e5a433e-2e58-4cbc-bb96-ed53a8146871",
-                        "x": 160,
-                        "y": 160,
-                        "width": 240,
-                        "height": 100,
-                        "color": {
-                            "hex": "#333333"
-                        }
-                    },
-                    {
-                        "GUID": "a7c8be69-8557-4b1e-b74e-17a24b977316",
-                        "x": 180,
-                        "y": 180,
-                        "width": 240,
-                        "height": 100,
-                        "color": {
-                            "hex": "#333333"
-                        }
-                    },
-                    {
                         "GUID": "35a2de93-8db1-48b1-b7bb-a289d74cb306",
                         "x": 140,
                         "y": 140,
@@ -1077,6 +1095,26 @@
                         "color": {
                             "hex": "#333333"
                         }
+                    },
+                    {
+                        "GUID": "9572fae9-b08a-489d-b2f3-85a814263275",
+                        "x": 250,
+                        "y": 497,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#2196F3"
+                        }
+                    },
+                    {
+                        "GUID": "aba62b2b-054b-46d4-b617-7ec4ac685599",
+                        "x": 160,
+                        "y": 160,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hex": "#333333"
+                        }
                     }
                 ],
                 "erdDefinitions": {
@@ -1105,56 +1143,63 @@
                         {
                             "GUID": "f7054bad-269c-4d26-b74e-06dbdda2ae3f",
                             "size": 100,
-                            "x": 246.84497189458187,
-                            "y": 325.70067663220794,
+                            "x": 251.84497189458187,
+                            "y": 324.70067663220794,
                             "isPined": true
                         },
                         {
                             "GUID": "01a99474-826f-4ecf-af34-b1a18a8b0e6a",
                             "size": 100,
-                            "x": 528.7405289344767,
-                            "y": 102
+                            "x": 533.7658322126931,
+                            "y": 100.34304442985722
                         },
                         {
                             "GUID": "62e4eb54-c037-47f2-bfa6-9d015d6cd52c",
                             "size": 100,
-                            "x": 847.7630533633354,
-                            "y": 270.46707928120765,
+                            "x": 852.7630533633354,
+                            "y": 269.46707928120765,
                             "isPined": true
                         },
                         {
                             "GUID": "d70dc8d9-361f-4706-a72a-bb16c8d969fe",
                             "size": 100,
-                            "x": 889.2988415984606,
-                            "y": 111.35335428457306,
+                            "x": 894.2988415984606,
+                            "y": 110.35335428457306,
                             "isPined": true
                         },
                         {
                             "GUID": "d99b237e-3f4e-4c20-adba-f38264e514f7",
                             "size": 100,
-                            "x": 167.97336704398015,
-                            "y": 117,
+                            "x": 172.97336704398015,
+                            "y": 116,
                             "isPined": true
                         },
                         {
                             "GUID": "de168b71-bf36-4584-8787-d41c67bb67d6",
                             "size": 100,
-                            "x": 840.7431825863518,
-                            "y": 630.151003472288,
+                            "x": 845.7431825863518,
+                            "y": 629.151003472288,
                             "isPined": true
                         },
                         {
                             "GUID": "132ce376-26e9-4478-8ca5-e526c54ac8a2",
                             "size": 100,
-                            "x": 542.7331786293506,
-                            "y": 462.2012792830672,
+                            "x": 547.7331786293506,
+                            "y": 461.2012792830672,
+                            "isPined": true
+                        },
+                        {
+                            "GUID": "9572fae9-b08a-489d-b2f3-85a814263275",
+                            "size": 100,
+                            "x": 237.16922622902683,
+                            "y": 684.6808674182308,
                             "isPined": true
                         }
                     ],
                     "buckets": [
                         {
-                            "x": 129.97336704398015,
-                            "y": 61.82065003769688,
+                            "x": 127.97336704398015,
+                            "y": 61.33010366311437,
                             "GUID": "1c5dda5c-653c-43bd-bfcf-e394ded76d1b"
                         }
                     ],

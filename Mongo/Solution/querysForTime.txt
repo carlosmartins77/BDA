@@ -71,5 +71,19 @@ db.Equipa.aggregate([
 
 
 5.    Inserção de um conjunto de jogos terminados
--- excel
-6.    Atualização da equipa vencedora dos jogos terminados
+-- feito
+
+6.    Atualização o status das Publicacoes para Deleted aos Comentarios com Datas < CurrentDate
+
+db.Publicacoes.updateMany({
+    DataHorario: {
+        $lt: new Date()
+    }
+}, 
+{
+    $set: {
+        Status: 'Deleted'
+    }
+}
+)
+
