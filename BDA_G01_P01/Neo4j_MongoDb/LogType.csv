@@ -1,0 +1,12 @@
+IdLogType,Descricao
+1,Registo
+2,Login
+3,Mudar palavra-passe
+4,Agendar jogo
+5,Aceitar jogo
+6,Recusar jogo
+7,Adicionar amigo
+8,Remover amigo
+9,Criar equipa
+10,Adicionar jogador a equipa
+11,Remover jogador da equipa
